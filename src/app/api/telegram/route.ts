@@ -6,7 +6,9 @@ interface TelegramPost {
   id: string;
   date: string;
   text: string;
+  fullText: string;
   link: string;
+  image: string | null;
 }
 
 export async function GET() {
@@ -49,9 +51,14 @@ function parseTelegramPosts(html: string): TelegramPost[] {
       /tgme_widget_message_text[^"]*"[^>]*>([\s\S]*?)<\/div>/
     );
     const dateMatch = block.match(/datetime="([^"]+)"/);
+    const imageMatch = block.match(
+      /tgme_widget_message_photo[^>]*style="background-image:url\('(https:\/\/cdn[^']+)'\)"/
+    );
 
     if (idMatch && textMatch && dateMatch) {
-      const text = textMatch[1]
+      const rawText = textMatch[1];
+
+      const fullText = rawText
         .replace(/<br\s*\/?>/gi, "\n")
         .replace(/<[^>]+>/g, "")
         .replace(/&nbsp;/g, " ")
@@ -62,12 +69,20 @@ function parseTelegramPosts(html: string): TelegramPost[] {
         .replace(/\n{3,}/g, "\n\n")
         .trim();
 
-      if (text.length > 10) {
+      if (fullText.length > 10) {
+        const firstLine = fullText.split("\n")[0].trim();
+        const title =
+          firstLine.length > 120
+            ? firstLine.slice(0, 120) + "…"
+            : firstLine;
+
         posts.push({
           id: idMatch[1],
           date: dateMatch[1].split("T")[0],
-          text: text.slice(0, 500),
+          text: title,
+          fullText: fullText,
           link: `https://t.me/trud_migr/${idMatch[1]}`,
+          image: imageMatch ? imageMatch[1] : null,
         });
       }
     }
