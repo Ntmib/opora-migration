@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { news, formatDate } from "@/data/news";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
@@ -7,16 +8,21 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero — animated gradient */}
-      <section
-        className="relative text-white overflow-hidden"
-        style={{
-          background: "linear-gradient(135deg, #0a3d6b 0%, #1e87f0 40%, #4da8f7 70%, #1e87f0 100%)",
-          backgroundSize: "200% 200%",
-          animation: "hero-gradient 8s ease infinite",
-        }}
-      >
-        {/* Decorative circles */}
+      {/* Hero with photo */}
+      <section className="relative text-white overflow-hidden min-h-[600px] lg:min-h-[700px]">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero.jpg"
+            alt="Заседание комитета ОПОРЫ РОССИИ"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary/85 to-primary/70" />
+        </div>
+
+        {/* Decorative */}
         <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl" />
         <div className="absolute bottom-[-30%] left-[-10%] w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl" />
 
@@ -84,44 +90,158 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <AnimateOnScroll delay={0} direction="up">
-              <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 card-hover h-full">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20">
-                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
+              <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover h-full">
+                <div className="relative h-48">
+                  <Image src="/images/event-1.jpg" alt="Законотворчество" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Законотворчество</h3>
-                <p className="text-gray-500 leading-relaxed">
-                  Участие в разработке и экспертизе законодательных актов в сфере миграционной политики и трудовых отношений.
-                </p>
+                <div className="p-8">
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20 -mt-14 relative z-10 border-4 border-white">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Законотворчество</h3>
+                  <p className="text-gray-500 leading-relaxed">
+                    Участие в разработке и экспертизе законодательных актов в сфере миграционной политики и трудовых отношений.
+                  </p>
+                </div>
               </div>
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={150} direction="up">
-              <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 card-hover h-full">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20">
-                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
+              <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover h-full">
+                <div className="relative h-48">
+                  <Image src="/images/event-2.jpg" alt="Поддержка МСП" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Поддержка МСП</h3>
-                <p className="text-gray-500 leading-relaxed">
-                  Поддержка субъектов малого и среднего предпринимательства, использующих труд иностранных работников.
-                </p>
+                <div className="p-8">
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20 -mt-14 relative z-10 border-4 border-white">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Поддержка МСП</h3>
+                  <p className="text-gray-500 leading-relaxed">
+                    Поддержка субъектов малого и среднего предпринимательства, использующих труд иностранных работников.
+                  </p>
+                </div>
               </div>
             </AnimateOnScroll>
 
             <AnimateOnScroll delay={300} direction="up">
-              <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 card-hover h-full">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20">
-                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                  </svg>
+              <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover h-full">
+                <div className="relative h-48">
+                  <Image src="/images/event-3.jpg" alt="Миграционная инфраструктура" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Миграционная инфраструктура</h3>
-                <p className="text-gray-500 leading-relaxed">
-                  Координация предпринимателей в миграционной инфраструктуре и применение лучших практик.
+                <div className="p-8">
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20 -mt-14 relative z-10 border-4 border-white">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Миграционная инфраструктура</h3>
+                  <p className="text-gray-500 leading-relaxed">
+                    Координация предпринимателей в миграционной инфраструктуре и применение лучших практик.
+                  </p>
+                </div>
+              </div>
+            </AnimateOnScroll>
+          </div>
+        </div>
+      </section>
+
+      {/* Chairman quote with photo */}
+      <section className="py-20 sm:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimateOnScroll>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="relative">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
+                  <Image src="/images/nuzhdin.jpg" alt="Сергей Нуждин — Председатель Комитета" fill className="object-cover" />
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-2xl -z-10" />
+                <div className="absolute -top-4 -left-4 w-32 h-32 bg-primary/5 rounded-2xl -z-10" />
+              </div>
+              <div>
+                <div className="inline-block px-3 py-1 bg-primary-light text-primary text-sm font-semibold rounded-full mb-6">
+                  Председатель Комитета
+                </div>
+                <blockquote className="text-xl sm:text-2xl font-medium text-gray-900 leading-relaxed mb-6">
+                  «Мы работаем на принципах прозрачности и открытости, содействуя развитию национального рынка труда и совершенствованию миграционной политики»
+                </blockquote>
+                <p className="text-gray-500 leading-relaxed mb-6">
+                  Сергей Нуждин — председатель Комитета «ОПОРЫ РОССИИ» по развитию национального рынка труда и мониторингу миграционных процессов.
                 </p>
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors group"
+                >
+                  Подробнее о комитете
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
+      {/* Photo gallery */}
+      <section className="py-20 sm:py-28 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimateOnScroll>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">
+              Мероприятия
+            </h2>
+            <p className="text-gray-500 text-center max-w-2xl mx-auto mb-12">
+              Ключевые события с участием Комитета
+            </p>
+          </AnimateOnScroll>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <AnimateOnScroll delay={0} className="col-span-2 row-span-2">
+              <div className="relative rounded-2xl overflow-hidden shadow-md h-full min-h-[300px] lg:min-h-[400px] group">
+                <Image src="/images/pmef-2025.jpg" alt="ПМЭФ 2025" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <span className="text-xs font-medium bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full">ПМЭФ 2025</span>
+                  <p className="text-sm mt-2 font-medium">Заседание Комитета на Петербургском международном экономическом форуме</p>
+                </div>
+              </div>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll delay={100}>
+              <div className="relative rounded-2xl overflow-hidden shadow-md aspect-square group">
+                <Image src="/images/vef-2024.webp" alt="ВЭФ 2024" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <span className="absolute bottom-3 left-3 text-white text-xs font-medium bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full">ВЭФ 2024</span>
+              </div>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll delay={200}>
+              <div className="relative rounded-2xl overflow-hidden shadow-md aspect-square group">
+                <Image src="/images/uzbekistan.jpg" alt="Узбекистан" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <span className="absolute bottom-3 left-3 text-white text-xs font-medium bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full">Ташкент 2022</span>
+              </div>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll delay={300}>
+              <div className="relative rounded-2xl overflow-hidden shadow-md aspect-square group">
+                <Image src="/images/presidium.jpg" alt="Президиум" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <span className="absolute bottom-3 left-3 text-white text-xs font-medium bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full">Президиум</span>
+              </div>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll delay={400}>
+              <div className="relative rounded-2xl overflow-hidden shadow-md aspect-square group">
+                <Image src="/images/event-1.jpg" alt="Заседание" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <span className="absolute bottom-3 left-3 text-white text-xs font-medium bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full">Заседание</span>
               </div>
             </AnimateOnScroll>
           </div>
