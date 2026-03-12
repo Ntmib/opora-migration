@@ -40,6 +40,49 @@ export async function GET() {
   }
 }
 
+function decodeHtmlEntities(str: string): string {
+  return str
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
+}
+
+function cleanTelegramText(rawHtml: string): string {
+  let text = rawHtml;
+
+  // Remove hashtag links but keep the text
+  text = text.replace(/<a[^>]*class="[^"]*hashtag[^"]*"[^>]*>([^<]*)<\/a>/gi, "");
+
+  // Replace <a> links with just the visible text (remove URL noise)
+  text = text.replace(/<a[^>]*>([^<]*)<\/a>/gi, "$1");
+
+  // Remove tg-emoji custom tags, keep inner text
+  text = text.replace(/<tg-emoji[^>]*>([\s\S]*?)<\/tg-emoji>/gi, "$1");
+
+  // br → newline
+  text = text.replace(/<br\s*\/?>/gi, "\n");
+
+  // Remove remaining HTML tags
+  text = text.replace(/<[^>]+>/g, "");
+
+  // Decode HTML entities
+  text = decodeHtmlEntities(text);
+
+  // Remove lines that are just channel self-promo (like "Мой канал в MAX!" or channel name)
+  text = text.replace(/\n*Мой канал в MAX[^\n]*/gi, "");
+  text = text.replace(/\n*Национальный рынок труда\|[^\n]*/gi, "");
+
+  // Clean up whitespace
+  text = text.replace(/\n{3,}/g, "\n\n").trim();
+
+  return text;
+}
+
 function parseTelegramPosts(html: string): TelegramPost[] {
   const posts: TelegramPost[] = [];
 
@@ -56,18 +99,7 @@ function parseTelegramPosts(html: string): TelegramPost[] {
     );
 
     if (idMatch && textMatch && dateMatch) {
-      const rawText = textMatch[1];
-
-      const fullText = rawText
-        .replace(/<br\s*\/?>/gi, "\n")
-        .replace(/<[^>]+>/g, "")
-        .replace(/&nbsp;/g, " ")
-        .replace(/&amp;/g, "&")
-        .replace(/&lt;/g, "<")
-        .replace(/&gt;/g, ">")
-        .replace(/&quot;/g, '"')
-        .replace(/\n{3,}/g, "\n\n")
-        .trim();
+      const fullText = cleanTelegramText(textMatch[1]);
 
       if (fullText.length > 10) {
         const firstLine = fullText.split("\n")[0].trim();
