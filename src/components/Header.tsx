@@ -18,25 +18,25 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* Banner image — full width */}
-      <div className="bg-[#0e2a4e]">
+      {/* Top bar — white with original logo */}
+      <div className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="shrink-0 py-2">
+          <div className="flex items-center justify-between h-16 sm:h-20">
+            <Link href="/" className="shrink-0">
               <img
-                src="/images/opora-logo-white.png"
+                src="/images/opora-logo.png"
                 alt="ОПОРА РОССИИ"
-                className="h-10 sm:h-14 lg:h-16 w-auto"
+                className="h-10 sm:h-12 lg:h-14 w-auto"
               />
             </Link>
 
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:+74952129017" className="text-white/80 hover:text-white text-sm transition-colors">
+              <a href="tel:+74952129017" className="text-gray-600 hover:text-primary text-sm transition-colors">
                 8 495 212 90 17
               </a>
               <Link
                 href="/contacts"
-                className="px-5 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded transition-colors"
+                className="px-5 py-2 bg-primary hover:bg-primary-dark text-white text-sm font-semibold rounded transition-colors"
               >
                 Контакты
               </Link>
@@ -44,7 +44,7 @@ export default function Header() {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10"
+              className="lg:hidden p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-gray-50"
               aria-label="Меню"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,18 +59,18 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Navigation bar */}
-      <div className="bg-white border-b border-gray-200 shadow-sm">
+      {/* Navigation bar — dark blue */}
+      <div className="bg-[#0e2a4e] shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="hidden lg:flex items-center gap-0 h-12">
+          <nav className="hidden lg:flex items-center gap-0 h-11">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={`px-5 h-full flex items-center text-sm font-medium transition-colors border-b-2 ${
                   pathname === link.href
-                    ? "border-primary text-primary"
-                    : "border-transparent text-gray-600 hover:text-primary hover:border-primary/30"
+                    ? "border-white text-white"
+                    : "border-transparent text-white/70 hover:text-white hover:border-white/40"
                 }`}
               >
                 {link.label}
@@ -91,7 +91,7 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "bg-primary-light text-primary"
+                    ? "bg-primary/10 text-primary"
                     : "text-gray-600 hover:text-primary hover:bg-gray-50"
                 }`}
               >
