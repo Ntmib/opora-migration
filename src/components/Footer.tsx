@@ -1,0 +1,108 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="bg-primary-dark text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">ОР</span>
+              </div>
+              <div>
+                <div className="font-bold text-sm leading-tight">ОПОРА РОССИИ</div>
+                <div className="text-white/60 text-xs leading-tight">Комитет по развитию рынка труда</div>
+              </div>
+            </div>
+            <p className="text-white/70 text-sm leading-relaxed">
+              Комитет по развитию национального рынка труда и мониторингу миграционных процессов
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-sm uppercase tracking-wider mb-4">Навигация</h3>
+            <ul className="space-y-2.5">
+              <li><Link href="/" className="text-white/70 hover:text-white text-sm transition-colors">Главная</Link></li>
+              <li><Link href="/about" className="text-white/70 hover:text-white text-sm transition-colors">О комитете</Link></li>
+              <li><Link href="/news" className="text-white/70 hover:text-white text-sm transition-colors">Новости</Link></li>
+              <li><Link href="/join" className="text-white/70 hover:text-white text-sm transition-colors">Вступить</Link></li>
+              <li><Link href="/contacts" className="text-white/70 hover:text-white text-sm transition-colors">Контакты</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-sm uppercase tracking-wider mb-4">Контакты</h3>
+            <ul className="space-y-2.5 text-sm text-white/70">
+              <li>
+                <a href="tel:+74952129017" className="hover:text-white transition-colors">8 495 212 90 17</a>
+              </li>
+              <li>
+                <a href="tel:+79276066202" className="hover:text-white transition-colors">+7 927 606 62 02</a>
+              </li>
+              <li>
+                <a href="mailto:migratsiya_opora@mail.ru" className="hover:text-white transition-colors">migratsiya_opora@mail.ru</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-sm uppercase tracking-wider mb-4">Мы в сети</h3>
+            <div className="flex flex-col gap-2.5">
+              <a
+                href="https://t.me/trud_migr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+                Telegram
+              </a>
+              <a
+                href="https://max.ru/join/8JKOvIdoIGNb71Op-tX8Fwv1EcDSx-PM9KVuspZNrbc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <text x="12" y="16" textAnchor="middle" fontSize="10" fill="currentColor" fontWeight="bold">M</text>
+                </svg>
+                Max (канал)
+              </a>
+              <a
+                href="https://max.ru/join/FTtx0stEqo1ZUSXEKVSrqYl5wzQFfD2FyjqRfoatcbQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <text x="12" y="16" textAnchor="middle" fontSize="10" fill="currentColor" fontWeight="bold">M</text>
+                </svg>
+                Max (комитет)
+              </a>
+              <a
+                href="https://opora.ru/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                opora.ru
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 pt-8 border-t border-white/10 text-center text-sm text-white/50">
+          &copy; {new Date().getFullYear()} ОПОРА РОССИИ. Комитет по развитию национального рынка труда и мониторингу миграционных процессов.
+        </div>
+      </div>
+    </footer>
+  );
+}
