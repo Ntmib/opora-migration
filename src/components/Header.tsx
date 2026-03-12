@@ -24,9 +24,10 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <Link href="/" className="shrink-0 py-2">
               <img
-                src="/images/header-banner.jpg"
-                alt="ОПОРА РОССИИ — Общероссийская общественная организация малого и среднего предпринимательства"
-                className="h-12 sm:h-16 lg:h-20 w-auto"
+                src="/images/logo-opora.png"
+                alt="ОПОРА РОССИИ"
+                className="h-10 sm:h-14 lg:h-16 w-auto"
+                style={{ mixBlendMode: "screen" }}
               />
             </Link>
 
