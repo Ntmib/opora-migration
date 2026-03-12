@@ -1,11 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { news, formatDate } from "@/data/news";
+import LatestNews from "@/components/LatestNews";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export default function HomePage() {
-  const latestNews = news.slice(0, 4);
-
   return (
     <>
       {/* Hero with photo */}
@@ -300,23 +298,7 @@ export default function HomePage() {
             </div>
           </AnimateOnScroll>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {latestNews.map((item, i) => (
-              <AnimateOnScroll key={item.id} delay={i * 100} direction="up">
-                <article className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover h-full">
-                  <time className="text-sm text-primary font-semibold">
-                    {formatDate(item.date)}
-                  </time>
-                  <h3 className="text-gray-900 font-bold mt-3 mb-3 text-sm leading-snug line-clamp-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
-                    {item.excerpt}
-                  </p>
-                </article>
-              </AnimateOnScroll>
-            ))}
-          </div>
+          <LatestNews />
 
           <AnimateOnScroll className="mt-8 text-center sm:hidden">
             <Link
