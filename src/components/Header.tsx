@@ -23,18 +23,17 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
             <Link href="/" className="flex items-center gap-3 shrink-0">
-              <img
-                src="/images/logo.png"
-                alt="ОПОРА РОССИИ"
-                className="h-8 sm:h-10 w-auto"
-                style={{ filter: "brightness(0) invert(1)" }}
-              />
-              <div className="hidden sm:block">
-                <div className="font-bold text-sm leading-tight tracking-wide">
-                  ОПОРА РОССИИ
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white/15 rounded-lg flex items-center justify-center border border-white/20">
+                  <span className="text-white font-black text-sm sm:text-base leading-none">ОР</span>
                 </div>
-                <div className="text-white/60 text-[11px] leading-tight">
-                  Общероссийская общественная организация малого и среднего предпринимательства
+                <div>
+                  <div className="font-bold text-sm sm:text-base leading-tight tracking-wide text-white">
+                    ОПОРА РОССИИ
+                  </div>
+                  <div className="hidden sm:block text-white/60 text-[11px] leading-tight">
+                    Комитет по развитию национального рынка труда
+                  </div>
                 </div>
               </div>
             </Link>
