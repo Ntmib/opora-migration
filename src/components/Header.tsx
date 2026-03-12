@@ -29,7 +29,7 @@ export default function Header() {
                 alt="ОПОРА РОССИИ"
                 width={46}
                 height={13}
-                className="h-8 sm:h-10 w-auto brightness-0 invert"
+                className="h-8 sm:h-10 w-auto" style={{ filter: "brightness(0) invert(1)" }}
               />
               <div className="hidden sm:block">
                 <div className="font-bold text-sm leading-tight tracking-wide">
