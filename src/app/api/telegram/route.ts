@@ -123,7 +123,7 @@ function parseTelegramPosts(html: string): TelegramPost[] {
           text: title,
           fullText: fullText,
           link: `https://t.me/trud_migr/${idMatch[1]}`,
-          image: imageMatch ? imageMatch[1] : null,
+          image: imageMatch ? "/api/image?url=" + encodeURIComponent(imageMatch[1]) : null,
         });
       }
     }
