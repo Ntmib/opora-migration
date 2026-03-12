@@ -6,11 +6,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div className="sm:col-span-2 lg:col-span-1 flex items-start">
-            <div className="bg-white rounded-xl p-4 sm:p-5">
+            <div className="bg-white rounded-xl p-4">
               <img
                 src="/images/opora-logo-vertical.jpg"
                 alt="ОПОРА РОССИИ"
-                className="h-28 sm:h-36 lg:h-40 w-auto"
+                className="h-24 w-auto"
               />
             </div>
           </div>
