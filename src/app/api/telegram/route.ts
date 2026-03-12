@@ -104,7 +104,7 @@ function parseTelegramPosts(html: string): TelegramPost[] {
     );
     const dateMatch = block.match(/datetime="([^"]+)"/);
     const imageMatch = block.match(
-      /tgme_widget_message_photo[^>]*style="background-image:url\('(https:\/\/cdn[^']+)'\)"/
+      /background-image:url\('(https:\/\/cdn[^']+)'\)/
     );
 
     if (idMatch && textMatch && dateMatch) {
