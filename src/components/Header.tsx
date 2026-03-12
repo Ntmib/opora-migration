@@ -54,7 +54,7 @@ export default function Header() {
           <div className="flex items-center justify-between py-3 sm:py-4 lg:py-5">
             <Link href="/" className="shrink-0">
               <img
-                src="/images/opora-logo-vertical.jpg"
+                src="/images/opora-logo-vertical.png"
                 alt="ОПОРА РОССИИ — Общероссийская общественная организация малого и среднего предпринимательства"
                 className="h-14 sm:h-20 lg:h-24 w-auto"
               />
