@@ -46,10 +46,11 @@ export default function FloatingTelegram() {
         </svg>
       </span>
 
-      {/* Tooltip */}
-      <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-        Telegram канал
-        <span className="absolute left-full top-1/2 -translate-y-1/2 border-4 border-transparent border-l-gray-900" />
+      {/* Slide-out tooltip */}
+      <span className="absolute right-full mr-0 top-1/2 -translate-y-1/2 flex items-center overflow-hidden max-w-0 group-hover:max-w-xs transition-all duration-500 ease-out">
+        <span className="bg-[#229ED9] text-white text-sm font-medium pl-4 pr-3 py-2.5 rounded-l-full whitespace-nowrap shadow-lg">
+          Подпишись на Telegram-канал «ОПОРЫ РОССИИ»
+        </span>
       </span>
     </a>
   );
