@@ -11,6 +11,8 @@ interface TelegramPost {
   image: string | null;
 }
 
+const MAX_CHANNEL_URL = "https://max.ru/join/8JKOvIdoIGNb71Op-tX8Fwv1EcDSx-PM9KVuspZNrbc";
+
 export async function GET() {
   try {
     const res = await fetch("https://t.me/s/trud_migr", {
@@ -31,7 +33,7 @@ export async function GET() {
     const html = await res.text();
     const posts = parseTelegramPosts(html);
 
-    return NextResponse.json({ posts });
+    return NextResponse.json({ posts, maxChannelUrl: MAX_CHANNEL_URL });
   } catch {
     return NextResponse.json(
       { error: "Internal server error" },
@@ -55,10 +57,10 @@ function decodeHtmlEntities(str: string): string {
 function cleanTelegramText(rawHtml: string): string {
   let text = rawHtml;
 
-  // Remove hashtag links but keep the text
+  // Remove hashtag links
   text = text.replace(/<a[^>]*class="[^"]*hashtag[^"]*"[^>]*>([^<]*)<\/a>/gi, "");
 
-  // Replace <a> links with just the visible text (remove URL noise)
+  // Replace <a> links with just the visible text
   text = text.replace(/<a[^>]*>([^<]*)<\/a>/gi, "$1");
 
   // Remove tg-emoji custom tags, keep inner text
@@ -73,9 +75,16 @@ function cleanTelegramText(rawHtml: string): string {
   // Decode HTML entities
   text = decodeHtmlEntities(text);
 
-  // Remove lines that are just channel self-promo (like "Мой канал в MAX!" or channel name)
-  text = text.replace(/\n*Мой канал в MAX[^\n]*/gi, "");
-  text = text.replace(/\n*Национальный рынок труда\|[^\n]*/gi, "");
+  // Remove all MAX/channel promo lines (various spellings)
+  text = text.replace(/\n*.*[Мм]ой канал в (MAX|МАХ|Max)[^\n]*/gi, "");
+  text = text.replace(/\n*.*[Пп]одписывайтесь в (MAX|МАХ|Max)[^\n]*/gi, "");
+  text = text.replace(/\n*.*канале? на (MAX|МАХ|Max)[^\n]*/gi, "");
+  text = text.replace(/\n*.*[Чч]то вы получите в моём канале[^\n]*/gi, "");
+  text = text.replace(/\n*.*резервный канал для тех[^\n]*/gi, "");
+  text = text.replace(/\n*.*остаюсь активным.*MAX[^\n]*/gi, "");
+  text = text.replace(/\n*Национальный рынок труда\s*\|?\s*Экспертиза и решения\s*/gi, "");
+  text = text.replace(/\n*Национальный рынок труда\s*$/gim, "");
+  text = text.replace(/\n*Будущее рынка труда строится сегодня\.\s*$/gim, "");
 
   // Clean up whitespace
   text = text.replace(/\n{3,}/g, "\n\n").trim();
