@@ -18,26 +18,20 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* Top bar — banner with logo */}
-      <div className="relative overflow-hidden">
-        <img
-          src="/images/header-banner.jpg"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-primary-dark/40" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 sm:h-20">
-            <Link href="/" className="shrink-0">
+      {/* Banner image — full width */}
+      <div className="bg-[#0e2a4e]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between">
+            <Link href="/" className="shrink-0 py-2">
               <img
                 src="/images/header-banner.jpg"
-                alt="ОПОРА РОССИИ"
-                className="h-10 sm:h-14 w-auto"
+                alt="ОПОРА РОССИИ — Общероссийская общественная организация малого и среднего предпринимательства"
+                className="h-12 sm:h-16 lg:h-20 w-auto"
               />
             </Link>
 
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:+74952129017" className="text-white/90 hover:text-white text-sm transition-colors">
+              <a href="tel:+74952129017" className="text-white/80 hover:text-white text-sm transition-colors">
                 8 495 212 90 17
               </a>
               <Link
@@ -50,7 +44,7 @@ export default function Header() {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-white/90 hover:text-white hover:bg-white/10"
+              className="lg:hidden p-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10"
               aria-label="Меню"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
