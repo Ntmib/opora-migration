@@ -9,7 +9,7 @@ export default function Footer() {
             <img
                 src="/images/opora-logo-vertical.png"
                 alt="ОПОРА РОССИИ"
-                className="h-24 w-auto brightness-0 invert"
+                className="h-36 sm:h-40 lg:h-44 w-auto brightness-0 invert"
               />
           </div>
 
