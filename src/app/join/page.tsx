@@ -136,6 +136,23 @@ export default function JoinPage() {
                 />
               </div>
 
+              <div className="flex items-start gap-2">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  name="consent"
+                  required
+                  className="mt-1 w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary"
+                />
+                <label htmlFor="consent" className="text-sm text-gray-600">
+                  Я даю{" "}
+                  <a href="/privacy" className="text-primary hover:underline">
+                    согласие на обработку персональных данных
+                  </a>{" "}
+                  в соответствии с Федеральным законом №152-ФЗ
+                </label>
+              </div>
+
               <button
                 type="submit"
                 className="w-full px-6 py-3.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors"

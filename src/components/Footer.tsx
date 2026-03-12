@@ -92,8 +92,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-white/10 text-center text-sm text-white/50">
-          &copy; {new Date().getFullYear()} ОПОРА РОССИИ. Комитет по развитию национального рынка труда и мониторингу миграционных процессов.
+        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/50">
+          <span>&copy; {new Date().getFullYear()} ОПОРА РОССИИ. Комитет по развитию национального рынка труда и мониторингу миграционных процессов.</span>
+          <a href="/privacy" className="text-white/50 hover:text-white transition-colors">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>
