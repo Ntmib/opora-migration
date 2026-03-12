@@ -70,10 +70,10 @@ export default function ContactsPage() {
                     <div className="text-sm text-gray-500 mb-1">Телефоны</div>
                     <div className="space-y-1">
                       <a href="tel:+74952129017" className="block text-gray-900 hover:text-primary transition-colors">
-                        8 495 212 90 17
+                        8 (495) 212-90-17
                       </a>
                       <a href="tel:+79276066202" className="block text-gray-900 hover:text-primary transition-colors">
-                        +7 927 606 62 02
+                        +7 (927) 606-62-02
                       </a>
                     </div>
                   </div>

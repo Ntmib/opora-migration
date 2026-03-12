@@ -6,14 +6,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">ОР</span>
-              </div>
-              <div>
-                <div className="font-bold text-sm leading-tight">ОПОРА РОССИИ</div>
-                <div className="text-white/60 text-xs leading-tight">Комитет по развитию рынка труда</div>
-              </div>
+            <div className="mb-4">
+              <img
+                src="/images/opora-logo-vertical.jpg"
+                alt="ОПОРА РОССИИ"
+                className="h-20 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
               Комитет по развитию национального рынка труда и мониторингу миграционных процессов
@@ -35,10 +33,10 @@ export default function Footer() {
             <h3 className="font-semibold text-sm uppercase tracking-wider mb-4">Контакты</h3>
             <ul className="space-y-2.5 text-sm text-white/70">
               <li>
-                <a href="tel:+74952129017" className="hover:text-white transition-colors">8 495 212 90 17</a>
+                <a href="tel:+74952129017" className="hover:text-white transition-colors">8 (495) 212-90-17</a>
               </li>
               <li>
-                <a href="tel:+79276066202" className="hover:text-white transition-colors">+7 927 606 62 02</a>
+                <a href="tel:+79276066202" className="hover:text-white transition-colors">+7 (927) 606-62-02</a>
               </li>
               <li>
                 <a href="mailto:migratsiya_opora@mail.ru" className="hover:text-white transition-colors">migratsiya_opora@mail.ru</a>

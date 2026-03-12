@@ -177,7 +177,7 @@ export default function Header() {
               </a>
             </div>
             <a href="tel:+74952129017" className="block px-4 py-2.5 text-sm text-gray-500">
-              8 495 212 90 17
+              8 (495) 212-90-17
             </a>
           </nav>
         </div>
