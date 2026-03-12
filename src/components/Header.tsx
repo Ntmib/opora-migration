@@ -18,28 +18,26 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* Top bar — dark blue with logo */}
-      <div className="bg-primary-dark text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Top bar — banner with logo */}
+      <div className="relative overflow-hidden">
+        <img
+          src="/images/header-banner.jpg"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-primary-dark/40" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
-            <Link href="/" className="flex items-center gap-3 shrink-0">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white/15 rounded-lg flex items-center justify-center border border-white/20">
-                  <span className="text-white font-black text-sm sm:text-base leading-none">ОР</span>
-                </div>
-                <div>
-                  <div className="font-bold text-sm sm:text-base leading-tight tracking-wide text-white">
-                    ОПОРА РОССИИ
-                  </div>
-                  <div className="hidden sm:block text-white/60 text-[11px] leading-tight">
-                    Комитет по развитию национального рынка труда
-                  </div>
-                </div>
-              </div>
+            <Link href="/" className="shrink-0">
+              <img
+                src="/images/header-banner.jpg"
+                alt="ОПОРА РОССИИ"
+                className="h-10 sm:h-14 w-auto"
+              />
             </Link>
 
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:+74952129017" className="text-white/70 hover:text-white text-sm transition-colors">
+              <a href="tel:+74952129017" className="text-white/90 hover:text-white text-sm transition-colors">
                 8 495 212 90 17
               </a>
               <Link
@@ -52,7 +50,7 @@ export default function Header() {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-white/70 hover:text-white hover:bg-white/10"
+              className="lg:hidden p-2 rounded-lg text-white/90 hover:text-white hover:bg-white/10"
               aria-label="Меню"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
