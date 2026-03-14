@@ -74,6 +74,40 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* SRO Banner */}
+      <section className="bg-gradient-to-r from-[#0a3d6b] to-[#1e87f0] py-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <a
+            href="https://opora-rossii-2026.timepad.ru/event/3868366/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col sm:flex-row items-center justify-between gap-4 py-5 sm:py-6 group"
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-white/15 backdrop-blur-sm rounded-xl flex items-center justify-center shrink-0 border border-white/20">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <p className="text-white font-bold text-lg sm:text-xl">
+                  Вступление в СРО в области трудоустройства иностранных граждан
+                </p>
+                <p className="text-white/70 text-sm mt-1">
+                  19 марта · Онлайн · Бесплатно
+                </p>
+              </div>
+            </div>
+            <span className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary font-semibold rounded-xl group-hover:bg-gray-100 group-hover:scale-105 transition-all duration-300 shadow-lg shrink-0">
+              Зарегистрироваться
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+
       {/* Key directions */}
       <section className="py-20 sm:py-28 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

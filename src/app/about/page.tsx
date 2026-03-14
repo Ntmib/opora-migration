@@ -91,6 +91,41 @@ export default function AboutPage() {
         </div>
       </section>
 
+
+      {/* SRO */}
+      <section className="py-16 sm:py-20 bg-gradient-to-br from-primary-dark to-primary text-white overflow-hidden relative">
+        <div className="absolute top-[-30%] right-[-15%] w-[400px] h-[400px] bg-white/5 rounded-full blur-3xl" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <AnimateOnScroll>
+            <div className="max-w-3xl">
+              <div className="inline-block px-3 py-1 bg-white/15 backdrop-blur-sm text-white text-sm font-semibold rounded-full mb-6 border border-white/20">
+                Саморегулируемая организация
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+                СРО в области трудоустройства иностранных граждан
+              </h2>
+              <p className="text-white/80 leading-relaxed mb-4">
+                Комитет инициирует формирование добровольной саморегулируемой организации в сфере трудоустройства иностранцев. Цель — работать по высоким стандартам качества и влиять на отраслевые стандарты до полного вступления закона в силу.
+              </p>
+              <p className="text-white/80 leading-relaxed mb-8">
+                Приглашаем коммерческие организации присоединиться к формированию СРО и участвовать в разработке стандартов отрасли.
+              </p>
+              <a
+                href="https://opora-rossii-2026.timepad.ru/event/3868366/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-primary font-semibold rounded-xl hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg"
+              >
+                Подробнее и регистрация
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* Chairman */}
       <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
