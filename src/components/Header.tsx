@@ -8,6 +8,7 @@ const navLinks = [
   { href: "/", label: "Главная" },
   { href: "/about", label: "О комитете" },
   { href: "/news", label: "Новости" },
+  { href: "/sro", label: "СРО" },
   { href: "/join", label: "Вступить в Комитет" },
   { href: "/contacts", label: "Контакты" },
 ];
