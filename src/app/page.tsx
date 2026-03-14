@@ -91,9 +91,7 @@ export default function HomePage() {
                 <p className="text-white font-bold text-lg sm:text-xl">
                   Вступление в СРО в области трудоустройства иностранных граждан
                 </p>
-                <p className="text-white/70 text-sm mt-1">
-                  19 марта · Онлайн · Бесплатно
-                </p>
+
               </div>
             </div>
             <span className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary font-semibold rounded-xl group-hover:bg-gray-100 group-hover:scale-105 transition-all duration-300 shadow-lg shrink-0">
