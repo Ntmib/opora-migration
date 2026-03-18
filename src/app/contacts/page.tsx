@@ -19,6 +19,7 @@ export default function ContactsPage() {
       name: (form.elements.namedItem("name") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem("website") as HTMLInputElement).value,
     };
 
     try {
@@ -208,6 +209,11 @@ export default function ContactsPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Honeypot — скрытое поле-ловушка для ботов */}
+                  <div className="absolute opacity-0 h-0 w-0 overflow-hidden" aria-hidden="true" tabIndex={-1}>
+                    <label htmlFor="contact-website">Не заполняйте это поле</label>
+                    <input type="text" id="contact-website" name="website" autoComplete="off" tabIndex={-1} />
+                  </div>
                   <div>
                     <label
                       htmlFor="contact-name"

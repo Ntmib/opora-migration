@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import FloatingTelegram from "@/components/FloatingTelegram";
+import PublicShell from "@/components/PublicShell";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -40,7 +38,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Комитет ОПОРЫ РОССИИ по развитию национального рынка труда и мониторингу миграционных процессов",
-  url: "https://opora.ru/",
+  url: "https://opora-migration.ru",
   email: "migratsiya_opora@mail.ru",
   telephone: "+7-495-212-90-17",
   address: {
@@ -73,12 +71,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} antialiased overflow-x-hidden`}>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
-        <FloatingTelegram />
+        <PublicShell>{children}</PublicShell>
       </body>
     </html>
   );

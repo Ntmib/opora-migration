@@ -21,6 +21,7 @@ export default function JoinPage() {
       phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
       company: (form.elements.namedItem("company") as HTMLInputElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem("website") as HTMLInputElement).value,
     };
 
     try {
@@ -80,6 +81,11 @@ export default function JoinPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Honeypot — скрытое поле-ловушка для ботов */}
+              <div className="absolute opacity-0 h-0 w-0 overflow-hidden" aria-hidden="true" tabIndex={-1}>
+                <label htmlFor="website">Не заполняйте это поле</label>
+                <input type="text" id="website" name="website" autoComplete="off" tabIndex={-1} />
+              </div>
               <div>
                 <label
                   htmlFor="name"

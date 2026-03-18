@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Сайт Комитета ОПОРЫ РОССИИ по развитию национального рынка труда
 
-## Getting Started
+Корпоративный сайт с админ-панелью для управления контентом.
 
-First, run the development server:
+## Стек
+
+- **Next.js 16** + React 19 + TypeScript
+- **Tailwind CSS** — стили
+- **Nodemailer** — отправка форм на email (SMTP mail.ru)
+- **JSON-файлы** — хранение данных (контакты, новости, тексты)
+- **Docker** + Nginx — деплой на VPS
+
+## Быстрый старт (разработка)
 
 ```bash
+# Установить зависимости
+npm install
+
+# Создать файл настроек
+cp .env.example .env.local
+
+# Заполнить .env.local (SMTP_PASSWORD, ADMIN_PASSWORD, JWT_SECRET)
+
+# Создать начальные данные
+npm run seed
+
+# Запустить сервер разработки
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Сайт: http://localhost:3000
+Админка: http://localhost:3000/admin
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Деплой на VPS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+См. [docs/DEPLOY.md](docs/DEPLOY.md) — пошаговая инструкция.
 
-## Learn More
+## Документация
 
-To learn more about Next.js, take a look at the following resources:
+| Документ | Для кого |
+|----------|----------|
+| [docs/ADMIN_GUIDE.md](docs/ADMIN_GUIDE.md) | Администратор сайта (клиент) |
+| [docs/DEPLOY.md](docs/DEPLOY.md) | Разработчик / DevOps |
+| [docs/DOMAIN_SETUP.md](docs/DOMAIN_SETUP.md) | Администратор / Разработчик |
+| [docs/HANDOFF_CHECKLIST.md](docs/HANDOFF_CHECKLIST.md) | Чеклист передачи |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Структура проекта
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+  app/              — страницы сайта (Next.js App Router)
+    admin/          — админ-панель
+    api/            — API-маршруты
+  components/       — React-компоненты
+  lib/              — утилиты (data.ts, auth.ts, rate-limit.ts)
+data/               — JSON-файлы с данными (не в git)
+public/uploads/     — загруженные фото (не в git)
+deploy/             — конфиги для деплоя (nginx, backup)
+docs/               — документация
+```
 
-## Deploy on Vercel
+## Переменные окружения
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+См. [.env.example](.env.example) — все переменные с комментариями.

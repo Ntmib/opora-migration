@@ -2,4 +2,19 @@ node_modules
 .next
 .vercel
 
-.env*
+# Переменные окружения (секреты)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Данные сайта (живут на сервере, не в git)
+/data/*.json
+!/data/*.example.json
+
+# Загруженные фото
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# Бэкапы
+/data/backups/

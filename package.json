@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed": "npx tsx scripts/seed-data.ts"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.1",
+    "jose": "^6.2.1",
     "next": "16.1.6",
     "nodemailer": "^8.0.2",
     "react": "19.2.3",
