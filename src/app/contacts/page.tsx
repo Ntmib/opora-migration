@@ -1,12 +1,21 @@
 "use client";
 
 import type { FormEvent } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ContactsPage() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
+  const [contacts, setContacts] = useState<{
+    chairmanName: string; chairmanTitle: string; secretaryName: string;
+    phones: { number: string; label: string }[]; email: string;
+    address: string; telegram: string; telegramPersonal: string;
+  } | null>(null);
+
+  useEffect(() => {
+    fetch("/api/contacts").then(r => r.json()).then(setContacts).catch(() => {});
+  }, []);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -68,10 +77,10 @@ export default function ContactsPage() {
                     Председатель комитета
                   </div>
                   <div className="text-lg font-semibold text-gray-900">
-                    Нуждин Сергей Николаевич
+                    {contacts?.chairmanName || "Нуждин Сергей Николаевич"}
                   </div>
                   <div className="text-gray-500 text-sm mt-1">
-                    Член Президиума «ОПОРЫ РОССИИ»
+                    {contacts?.chairmanTitle || "Член Президиума «ОПОРЫ РОССИИ»"}
                   </div>
                 </div>
 
@@ -81,7 +90,7 @@ export default function ContactsPage() {
                     Секретарь комитета
                   </div>
                   <div className="text-lg font-semibold text-gray-900">
-                    Каждан Людмила Владимировна
+                    {contacts?.secretaryName || "Каждан Людмила Владимировна"}
                   </div>
                 </div>
 
@@ -95,12 +104,14 @@ export default function ContactsPage() {
                   <div>
                     <div className="text-sm text-gray-500 mb-1">Телефоны</div>
                     <div className="space-y-1">
-                      <a href="tel:+74952129017" className="block text-gray-900 hover:text-primary transition-colors">
-                        8 (495) 212-90-17
-                      </a>
-                      <a href="tel:+79276066202" className="block text-gray-900 hover:text-primary transition-colors">
-                        +7 (927) 606-62-02
-                      </a>
+                      {(contacts?.phones || [
+                        { number: "+7 (495) 212-90-17", label: "Основной" },
+                        { number: "+7 (927) 606-62-02", label: "Мобильный" },
+                      ]).map((phone, i) => (
+                        <a key={i} href={`tel:${phone.number.replace(/[^\d+]/g, "")}`} className="block text-gray-900 hover:text-primary transition-colors">
+                          {phone.number}
+                        </a>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -115,10 +126,10 @@ export default function ContactsPage() {
                   <div>
                     <div className="text-sm text-gray-500 mb-1">Email</div>
                     <a
-                      href="mailto:migratsiya_opora@mail.ru"
+                      href={`mailto:${contacts?.email || "migratsiya_opora@mail.ru"}`}
                       className="text-gray-900 hover:text-primary transition-colors"
                     >
-                      migratsiya_opora@mail.ru
+                      {contacts?.email || "migratsiya_opora@mail.ru"}
                     </a>
                   </div>
                 </div>
@@ -133,12 +144,12 @@ export default function ContactsPage() {
                   <div>
                     <div className="text-sm text-gray-500 mb-1">Telegram</div>
                     <a
-                      href="https://t.me/poogkn"
+                      href={contacts?.telegramPersonal || "https://t.me/poogkn"}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-900 hover:text-primary transition-colors"
                     >
-                      @poogkn
+                      {(contacts?.telegramPersonal || "https://t.me/poogkn").replace("https://t.me/", "@")}
                     </a>
                   </div>
                 </div>

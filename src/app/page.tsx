@@ -2,8 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import LatestNews from "@/components/LatestNews";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import { getTexts } from "@/lib/data";
 
-export default function HomePage() {
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
+  const texts = await getTexts();
   return (
     <>
       {/* Hero with photo */}
@@ -36,15 +40,13 @@ export default function HomePage() {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6"
               style={{ animation: "count-up 0.8s ease-out" }}
             >
-              Развитие национального рынка труда
+              {texts.hero.title}
             </h1>
             <p
               className="text-lg sm:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl"
               style={{ animation: "count-up 1s ease-out" }}
             >
-              Комитет по развитию национального рынка труда и мониторингу
-              миграционных процессов. Прозрачность, открытость и
-              профессиональный подход к решению задач.
+              {texts.hero.subtitle}
             </p>
             <div
               className="flex flex-col sm:flex-row gap-4"

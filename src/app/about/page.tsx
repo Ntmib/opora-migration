@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import { getTexts, getContacts } from "@/lib/data";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "О комитете",
@@ -24,7 +27,9 @@ const tasks = [
   "Участие в законотворчестве и экспертизе законодательных актов",
 ];
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const texts = await getTexts();
+  const contacts = await getContacts();
   return (
     <>
       {/* Page header */}
@@ -33,11 +38,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-3xl">
             <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
-              О комитете
+              {texts.about.title}
             </h1>
             <p className="text-white/80 text-lg leading-relaxed">
-              Комитет «ОПОРЫ РОССИИ» по развитию национального рынка труда и
-              мониторингу миграционных процессов
+              {texts.about.mission}
             </p>
           </div>
         </div>
@@ -113,9 +117,9 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-1">
-                    Сергей Николаевич Нуждин
+                    {contacts.chairmanName}
                   </h3>
-                  <p className="text-primary font-medium mb-4">Председатель комитета</p>
+                  <p className="text-primary font-medium mb-4">{contacts.chairmanTitle}</p>
                   <p className="text-gray-600 leading-relaxed mb-3">
                     Президент Международной ассоциации развития и содействия миграции.
                     Член Президиума «ОПОРЫ РОССИИ».
