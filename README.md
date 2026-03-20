@@ -8,7 +8,14 @@
 - **Tailwind CSS** — стили
 - **Nodemailer** — отправка форм на email (SMTP mail.ru)
 - **JSON-файлы** — хранение данных (контакты, новости, тексты)
-- **Docker** + Nginx — деплой на VPS
+- **Nginx** + systemd — деплой на VPS
+
+## Хостинг
+
+- **Сервер:** Beget Cloud VPS (193.42.124.57)
+- **Домен:** opora-migration.ru (регистратор — Timeweb)
+- **SSL:** Let's Encrypt (автопродление)
+- **Запуск:** systemd-сервис `opora-migration` (Next.js standalone)
 
 ## Быстрый старт (разработка)
 
@@ -31,9 +38,17 @@ npm run dev
 Сайт: http://localhost:3000
 Админка: http://localhost:3000/admin
 
-## Деплой на VPS
+## Деплой обновлений
 
-См. [docs/DEPLOY.md](docs/DEPLOY.md) — пошаговая инструкция.
+```bash
+npm run build
+tar czf /tmp/opora-standalone.tar.gz -C .next/standalone .
+tar czf /tmp/opora-static.tar.gz .next/static public/images
+scp /tmp/opora-standalone.tar.gz /tmp/opora-static.tar.gz root@193.42.124.57:/tmp/
+ssh root@193.42.124.57 "cd /root/opora-migration && tar xzf /tmp/opora-standalone.tar.gz && tar xzf /tmp/opora-static.tar.gz && systemctl restart opora-migration"
+```
+
+Подробнее: [docs/DEPLOY.md](docs/DEPLOY.md)
 
 ## Документация
 

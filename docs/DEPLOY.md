@@ -1,171 +1,201 @@
-# Деплой сайта на Timeweb Cloud VPS
+# Деплой сайта opora-migration.ru
 
-## Требования
+## Архитектура
 
-- Timeweb Cloud VPS (минимум 2 GB RAM, Ubuntu 22.04)
-- Домен opora-migration.ru (привязан к Timeweb)
-
-## Шаг 1: Создать VPS
-
-1. Войти в панель Timeweb (timeweb.com) → Cloud → Создать сервер
-2. Выбрать: **Ubuntu 22.04**, тариф **2 GB RAM / 1 vCPU / 20 GB SSD**
-3. Записать IP-адрес и root-пароль
-
-## Шаг 2: Подключиться к серверу
-
-```bash
-ssh root@<IP-адрес>
+```
+Браузер → opora-migration.ru → Beget VPS (193.42.124.57)
+                                    ├── Nginx (порт 80/443) → proxy → Next.js (порт 3000)
+                                    ├── Let's Encrypt SSL (автопродление)
+                                    └── systemd-сервис opora-migration
 ```
 
-## Шаг 3: Установить Docker
+- **Хостинг:** Beget Cloud VPS (193.42.124.57, Ubuntu 22.04)
+- **Домен:** opora-migration.ru (регистратор — Timeweb, аккаунт ck68396)
+- **DNS:** A-запись opora-migration.ru → 193.42.124.57 (настроено в панели Timeweb)
+- **SSL:** Let's Encrypt, автопродление через certbot
+- **Приложение:** Next.js 16 standalone, запускается через systemd (без Docker)
 
-```bash
-# Обновить систему
-apt update && apt upgrade -y
+## Структура на сервере
 
-# Установить Docker
-curl -fsSL https://get.docker.com | sh
-
-# Включить автозапуск Docker при перезагрузке
-systemctl enable docker
-
-# Добавить swap (страховка от нехватки памяти)
-fallocate -l 2G /swapfile
-chmod 600 /swapfile
-mkswap /swapfile
-swapon /swapfile
-echo '/swapfile none swap sw 0 0' >> /etc/fstab
+```
+/root/opora-migration/
+  ├── server.js              — точка входа (Next.js standalone)
+  ├── .env                   — переменные окружения
+  ├── .next/static/          — статика (CSS, JS, шрифты)
+  ├── public/images/         — изображения сайта
+  ├── public/uploads/        — загруженные фото (через админку)
+  ├── data/                  — JSON-данные (контакты, новости, тексты)
+  └── node_modules/          — зависимости (из standalone-сборки)
 ```
 
-## Шаг 4: Установить Nginx и Certbot
+## Деплой обновлений (быстрая команда)
+
+Выполнить с компьютера разработчика:
 
 ```bash
-apt install -y nginx certbot python3-certbot-nginx
+# 1. Собрать проект локально
+cd /путь/к/opora-migration
+npm run build
 
-# Включить firewall
-ufw allow 22/tcp
-ufw allow 80/tcp
-ufw allow 443/tcp
-ufw --force enable
+# 2. Упаковать сборку
+tar czf /tmp/opora-standalone.tar.gz -C .next/standalone .
+tar czf /tmp/opora-static.tar.gz .next/static public/images
+
+# 3. Залить на сервер
+scp /tmp/opora-standalone.tar.gz /tmp/opora-static.tar.gz root@193.42.124.57:/tmp/
+
+# 4. Распаковать и перезапустить
+ssh root@193.42.124.57 "cd /root/opora-migration && tar xzf /tmp/opora-standalone.tar.gz && tar xzf /tmp/opora-static.tar.gz && systemctl restart opora-migration"
 ```
 
-## Шаг 5: Склонировать проект
+После этого сайт обновится за ~2 секунды.
+
+## Первоначальная настройка (с нуля)
+
+### Шаг 1: Установить Node.js
 
 ```bash
-cd /root
-git clone https://github.com/Ntmib/opora-migration.git
-cd opora-migration
+ssh root@193.42.124.57
+curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+apt-get install -y nodejs
 ```
 
-## Шаг 6: Настроить переменные окружения
+### Шаг 2: Создать директорию и залить сборку
 
+На компьютере разработчика:
 ```bash
-cp .env.example .env
-nano .env
+cd /путь/к/opora-migration
+npm run build
+
+tar czf /tmp/opora-standalone.tar.gz -C .next/standalone .
+tar czf /tmp/opora-static.tar.gz .next/static public/images public/uploads data
+
+scp /tmp/opora-standalone.tar.gz /tmp/opora-static.tar.gz root@193.42.124.57:/tmp/
+
+ssh root@193.42.124.57 "mkdir -p /root/opora-migration && cd /root/opora-migration && tar xzf /tmp/opora-standalone.tar.gz && tar xzf /tmp/opora-static.tar.gz"
 ```
 
-Заполнить все значения (SMTP_PASSWORD, ADMIN_PASSWORD, JWT_SECRET).
+### Шаг 3: Создать .env
 
-Сгенерировать JWT_SECRET:
 ```bash
-openssl rand -base64 32
+ssh root@193.42.124.57
+cat > /root/opora-migration/.env << 'EOF'
+SMTP_USER=Migratsiya_opora@mail.ru
+SMTP_PASSWORD=<пароль_приложения_mail.ru>
+SMTP_TO=Migratsiya_opora@mail.ru
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=<пароль_админки>
+JWT_SECRET=<сгенерировать: openssl rand -base64 32>
+NEXT_PUBLIC_SITE_URL=https://opora-migration.ru
+PORT=3000
+HOSTNAME=0.0.0.0
+EOF
 ```
 
-## Шаг 7: Создать папки для данных
+### Шаг 4: Создать systemd-сервис
 
 ```bash
-mkdir -p data public/uploads
+cat > /etc/systemd/system/opora-migration.service << 'EOF'
+[Unit]
+Description=Opora Migration Next.js
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/opora-migration
+EnvironmentFile=/root/opora-migration/.env
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload
+systemctl enable opora-migration
+systemctl start opora-migration
 ```
 
-Создать начальные данные (выберите один вариант):
-
-**Вариант А** — через Docker (рекомендуется):
-```bash
-# Сначала соберите контейнер (шаг 8), потом:
-docker compose exec web node scripts/seed-data.js
-```
-
-**Вариант Б** — вручную:
-Скопируйте файлы `data/contacts.json`, `data/news.json`, `data/texts.json` с компьютера разработчика на сервер:
-```bash
-scp -r data/*.json root@<IP>:/root/opora-migration/data/
-```
-
-## Шаг 8: Собрать и запустить
+### Шаг 5: Настроить Nginx
 
 ```bash
-docker compose up -d --build
-```
+cat > /etc/nginx/sites-available/opora-migration << 'NGINX'
+server {
+    listen 80;
+    server_name opora-migration.ru www.opora-migration.ru;
 
-Проверить что работает:
-```bash
-curl http://localhost:3000
-```
+    client_max_body_size 10M;
 
-## Шаг 9: Настроить Nginx
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+NGINX
 
-```bash
-cp deploy/nginx.conf /etc/nginx/sites-available/opora-migration
 ln -sf /etc/nginx/sites-available/opora-migration /etc/nginx/sites-enabled/
-rm -f /etc/nginx/sites-enabled/default
-```
-
-Временно закомментировать строки с ssl_certificate (сертификата ещё нет):
-```bash
-nano /etc/nginx/sites-available/opora-migration
-# Закомментировать блок server с listen 443
-# Оставить только блок с listen 80 (но изменить return 301 на proxy_pass)
-```
-
-```bash
 nginx -t && systemctl reload nginx
 ```
 
-## Шаг 10: Получить SSL-сертификат
+### Шаг 6: Установить SSL
 
 ```bash
-certbot --nginx -d opora-migration.ru -d www.opora-migration.ru
+certbot --nginx -d opora-migration.ru -d www.opora-migration.ru \
+  --non-interactive --agree-tos --email Migratsiya_opora@mail.ru --redirect
 ```
 
-Certbot автоматически обновит nginx конфиг.
+### Шаг 7: Настроить DNS
 
-Проверить автообновление:
+В панели Timeweb (hosting.timeweb.ru, аккаунт ck68396):
+
+1. Домены → opora-migration.ru → Редактор DNS
+2. A-запись: значение → `193.42.124.57`
+3. Удалить AAAA-запись (если есть)
+4. MX и TXT записи — не трогать (они для почты)
+
+## Управление сервисом
+
 ```bash
-certbot renew --dry-run
+# Статус
+systemctl status opora-migration
+
+# Логи (последние 50 строк)
+journalctl -u opora-migration -n 50
+
+# Перезапуск
+systemctl restart opora-migration
+
+# Остановка
+systemctl stop opora-migration
 ```
 
-## Шаг 11: Настроить DNS
+## Бэкапы
 
-В панели Timeweb → Домены → opora-migration.ru → DNS:
-
-1. Удалить все старые A-записи
-2. Добавить: `A` запись `@` → `<IP-адрес VPS>`
-3. Добавить: `A` запись `www` → `<IP-адрес VPS>`
-
-Подождать 5-30 минут.
-
-## Шаг 12: Настроить бэкапы
+Данные сайта (data/ и public/uploads/) хранятся на сервере. Для бэкапа:
 
 ```bash
-chmod +x deploy/backup.sh
+# Скачать данные на свой компьютер
+scp -r root@193.42.124.57:/root/opora-migration/data ./backup-data
+scp -r root@193.42.124.57:/root/opora-migration/public/uploads ./backup-uploads
+```
+
+Автоматический бэкап (cron, ежедневно в 3:00):
+```bash
 crontab -e
+# Добавить:
+0 3 * * * tar czf /root/backups/opora-$(date +\%Y\%m\%d).tar.gz -C /root/opora-migration data public/uploads .env
 ```
 
-Добавить строку:
-```
-0 3 * * * /root/opora-migration/deploy/backup.sh
-```
+## Проверка после деплоя
 
-## Шаг 13: Настроить мониторинг
-
-1. Зарегистрироваться на https://uptimerobot.com (бесплатно)
-2. Add Monitor → HTTP(s) → https://opora-migration.ru
-3. Указать email клиента для уведомлений
-
-## Проверка
-
-- [ ] https://opora-migration.ru открывается
+- [ ] https://opora-migration.ru — открывается
 - [ ] HTTPS работает (замочек в браузере)
+- [ ] /admin — админка работает
 - [ ] Формы отправляют email
-- [ ] /admin работает (логин/пароль из .env)
-- [ ] После перезагрузки VPS сайт поднимается сам
+- [ ] Фото загружаются через админку

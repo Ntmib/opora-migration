@@ -7,6 +7,11 @@ const ALLOWED_HOSTS = [
   "cdn3.telegram-cdn.org",
   "cdn4.telegram-cdn.org",
   "cdn5.telegram-cdn.org",
+  "cdn1.telesco.pe",
+  "cdn2.telesco.pe",
+  "cdn3.telesco.pe",
+  "cdn4.telesco.pe",
+  "cdn5.telesco.pe",
 ];
 
 const MAX_SIZE = 10 * 1024 * 1024; // 10 MB макс
