@@ -18,3 +18,4 @@ node_modules
 
 # Бэкапы
 /data/backups/
+.env*.local
