@@ -42,7 +42,7 @@ export default function FloatingTelegram() {
           </span>
           <span className="ml-4 text-white whitespace-nowrap">
             <span className="block text-sm leading-tight">Подпишитесь на канал в MAX</span>
-            <span className="block text-lg font-bold leading-tight">«ОПОРЫ РОССИИ»</span>
+            <span className="block text-lg font-bold leading-tight">Комитета «ОПОРЫ РОССИИ»</span>
           </span>
         </span>
       </a>
@@ -73,7 +73,7 @@ export default function FloatingTelegram() {
           </span>
           <span className="ml-4 text-white whitespace-nowrap">
             <span className="block text-sm leading-tight">Подпишитесь на Telegram-канал</span>
-            <span className="block text-lg font-bold leading-tight">«ОПОРЫ РОССИИ»</span>
+            <span className="block text-lg font-bold leading-tight">Комитета «ОПОРЫ РОССИИ»</span>
           </span>
         </span>
       </a>
