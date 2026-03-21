@@ -1,3 +1,4 @@
+import fs from "fs";
 import path from "path";
 import ReactPDF, {
   Document,
@@ -8,12 +9,20 @@ import ReactPDF, {
   Font,
 } from "@react-pdf/renderer";
 
+// Load fonts as data URIs to ensure Cyrillic works
+const fontsDir = path.join(process.cwd(), "public/fonts");
+
+function fontDataUri(filename: string): string {
+  const buf = fs.readFileSync(path.join(fontsDir, filename));
+  return `data:font/truetype;base64,${buf.toString("base64")}`;
+}
+
 Font.register({
   family: "Inter",
   fonts: [
-    { src: path.join(process.cwd(), "public/fonts/Inter-Regular.ttf"), fontWeight: 400 },
-    { src: path.join(process.cwd(), "public/fonts/Inter-SemiBold.ttf"), fontWeight: 600 },
-    { src: path.join(process.cwd(), "public/fonts/Inter-Bold.ttf"), fontWeight: 700 },
+    { src: fontDataUri("Roboto-Regular.ttf"), fontWeight: 400 },
+    { src: fontDataUri("Roboto-Medium.ttf"), fontWeight: 600 },
+    { src: fontDataUri("Roboto-Bold.ttf"), fontWeight: 700 },
   ],
 });
 
@@ -26,8 +35,8 @@ const amberBorder = "#f59e0b";
 const s = StyleSheet.create({
   page: { fontFamily: "Inter", fontSize: 10, color: "#1a1a1a", paddingTop: 40, paddingBottom: 50, paddingHorizontal: 40 },
   cover: { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: blue, padding: 40 },
-  coverSub: { fontSize: 10, color: "#ffffff", opacity: 0.8, marginBottom: 12, textTransform: "uppercase", letterSpacing: 2 },
-  coverTitle: { fontSize: 28, fontWeight: 700, color: "#ffffff", textAlign: "center", lineHeight: 1.3 },
+  coverSub: { fontFamily: "Inter", fontSize: 10, color: "#ffffff", opacity: 0.8, marginBottom: 12, textTransform: "uppercase", letterSpacing: 2 },
+  coverTitle: { fontFamily: "Inter", fontSize: 28, fontWeight: 700, color: "#ffffff", textAlign: "center", lineHeight: 1.3 },
   coverLine: { width: 60, height: 3, backgroundColor: blueLight, marginTop: 20, borderRadius: 2 },
   tocTitle: { fontSize: 18, fontWeight: 700, color: blue, marginBottom: 16 },
   tocItem: { flexDirection: "row", alignItems: "center", marginBottom: 8 },
@@ -65,7 +74,7 @@ const Li = ({ children }: { children: string }) => (
 
 const BrochurePDF = () => (
   <Document title="Памятка для трудовых мигрантов" author="Министерство внутренней политики Самарской области">
-    <Page size="A4" style={{ padding: 0 }}>
+    <Page size="A4" style={{ padding: 0, fontFamily: "Inter" }}>
       <View style={s.cover}>
         <Text style={s.coverSub}>Министерство внутренней политики Самарской области</Text>
         <Text style={s.coverTitle}>{"Памятка\nдля трудовых\nмигрантов"}</Text>
