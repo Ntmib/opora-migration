@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import ReactPDF, {
+  Image,
   Document,
   Page,
   Text,
@@ -11,6 +12,15 @@ import ReactPDF, {
 
 // Load fonts as data URIs to ensure Cyrillic works
 const fontsDir = path.join(process.cwd(), "public/fonts");
+const imagesDir = path.join(process.cwd(), "public/images");
+
+function imageDataUri(filename: string, mime = "image/png"): string {
+  const buf = fs.readFileSync(path.join(imagesDir, filename));
+  return `data:${mime};base64,${buf.toString("base64")}`;
+}
+
+const logoRcpm = imageDataUri("logo-rcpm.jpg", "image/jpeg");
+const logoDdn = imageDataUri("logo-ddn.png", "image/png");
 
 function fontDataUri(filename: string): string {
   const buf = fs.readFileSync(path.join(fontsDir, filename));
@@ -79,6 +89,16 @@ const BrochurePDF = () => (
         <Text style={s.coverSub}>Министерство внутренней политики Самарской области</Text>
         <Text style={s.coverTitle}>{"Памятка\nдля трудовых\nмигрантов"}</Text>
         <View style={s.coverLine} />
+        <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 24, marginTop: 24 }}>
+          <View style={{ alignItems: "center" }}>
+            <Image src={logoRcpm} style={{ width: 48, height: 48, borderRadius: 24 }} />
+            <Text style={{ fontSize: 7, color: "#ffffff", opacity: 0.7, marginTop: 4, textAlign: "center", maxWidth: 80 }}>АНО «Региональный центр помощи мигрантам»</Text>
+          </View>
+          <View style={{ alignItems: "center" }}>
+            <Image src={logoDdn} style={{ width: 48, height: 48, borderRadius: 24 }} />
+            <Text style={{ fontSize: 7, color: "#ffffff", opacity: 0.7, marginTop: 4, textAlign: "center", maxWidth: 80 }}>ГКУ СО «Дом дружбы народов»</Text>
+          </View>
+        </View>
       </View>
     </Page>
 
@@ -166,7 +186,7 @@ const BrochurePDF = () => (
       <Text style={s.p}>В составе — 10 городов и 27 муниципальных районов. Один из ведущих экономических регионов с театрами, музеями и природными достопримечательностями.</Text>
       <View style={s.highlight}><Text style={s.highlightTitle}>Миграционные центры</Text><Text style={s.cardText}>г. Самара: ул. Кабельная, 13а, ул. Черногорская, 2</Text><Text style={s.cardText}>г. Тольятти: Тупиковый проезд, 4</Text></View>
       <View style={{ marginTop: 20, borderTopWidth: 1, borderTopColor: "#e5e7eb", paddingTop: 12 }}>
-        <Text style={{ fontSize: 9, color: "#6b7280", textAlign: "center" }}>Telegram-каналы: @fadnrf  @samddn  @chestniymigrant</Text>
+        <Text style={{ fontSize: 9, color: "#6b7280", textAlign: "center" }}>Telegram-каналы: @fadnrf  @samddn  @chestniymigrant  @RCPM63_RU</Text>
         <Text style={{ fontSize: 8, color: "#9ca3af", textAlign: "center", marginTop: 6 }}>Министерство внутренней политики Самарской области</Text>
       </View>
       <Text style={s.pageNum} render={({ pageNumber }) => String(pageNumber)} fixed />

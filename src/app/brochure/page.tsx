@@ -28,6 +28,16 @@ export default function BrochurePage() {
           <h1 className="text-3xl md:text-4xl font-bold leading-tight">
             Памятка для трудовых мигрантов
           </h1>
+          <div className="flex items-center justify-center gap-6 mt-6">
+            <div className="flex flex-col items-center gap-1">
+              <img src="/images/logo-rcpm.jpg" alt="АНО РЦПМ" className="w-16 h-16 rounded-full object-cover bg-white" />
+              <span className="text-[10px] opacity-70 max-w-[100px] leading-tight">АНО «Региональный центр помощи мигрантам»</span>
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <img src="/images/logo-ddn.png" alt="Дом дружбы народов" className="w-16 h-16 rounded-full object-cover" />
+              <span className="text-[10px] opacity-70 max-w-[100px] leading-tight">ГКУ СО «Дом дружбы народов»</span>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -375,6 +385,7 @@ export default function BrochurePage() {
             <a href="https://t.me/fadnrf" className="text-[#1e87f0] hover:underline" target="_blank" rel="noopener noreferrer">@fadnrf</a>
             <a href="https://t.me/samddn" className="text-[#1e87f0] hover:underline" target="_blank" rel="noopener noreferrer">@samddn</a>
             <a href="https://t.me/chestniymigrant" className="text-[#1e87f0] hover:underline" target="_blank" rel="noopener noreferrer">@chestniymigrant</a>
+            <a href="https://t.me/RCPM63_RU" className="text-[#1e87f0] hover:underline" target="_blank" rel="noopener noreferrer">@RCPM63_RU</a>
           </div>
           <p className="mt-6 text-xs text-gray-400">Министерство внутренней политики Самарской области</p>
         </footer>
