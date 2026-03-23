@@ -89,14 +89,18 @@ const BrochurePDF = () => (
         <Text style={s.coverSub}>Министерство внутренней политики Самарской области</Text>
         <Text style={s.coverTitle}>{"Памятка\nдля трудовых\nмигрантов"}</Text>
         <View style={s.coverLine} />
-        <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 24, marginTop: 24 }}>
+        <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "flex-start", gap: 40, marginTop: 30 }}>
           <View style={{ alignItems: "center" }}>
-            <Image src={logoRcpm} style={{ width: 48, height: 48, borderRadius: 24 }} />
-            <Text style={{ fontSize: 7, color: "#ffffff", opacity: 0.7, marginTop: 4, textAlign: "center", maxWidth: 80 }}>АНО «Региональный центр помощи мигрантам»</Text>
+            <View style={{ width: 72, height: 72, borderRadius: 36, backgroundColor: "#ffffff", justifyContent: "center", alignItems: "center", padding: 4 }}>
+              <Image src={logoRcpm} style={{ width: 64, height: 64, borderRadius: 32 }} />
+            </View>
+            <Text style={{ fontSize: 8, color: "#ffffff", opacity: 0.9, marginTop: 6, textAlign: "center", maxWidth: 100 }}>АНО «Региональный центр помощи мигрантам»</Text>
           </View>
           <View style={{ alignItems: "center" }}>
-            <Image src={logoDdn} style={{ width: 48, height: 48, borderRadius: 24 }} />
-            <Text style={{ fontSize: 7, color: "#ffffff", opacity: 0.7, marginTop: 4, textAlign: "center", maxWidth: 80 }}>ГКУ СО «Дом дружбы народов»</Text>
+            <View style={{ width: 72, height: 72, borderRadius: 36, backgroundColor: "#ffffff", justifyContent: "center", alignItems: "center", padding: 2 }}>
+              <Image src={logoDdn} style={{ width: 68, height: 68, borderRadius: 34 }} />
+            </View>
+            <Text style={{ fontSize: 8, color: "#ffffff", opacity: 0.9, marginTop: 6, textAlign: "center", maxWidth: 100 }}>ГКУ СО «Дом дружбы народов»</Text>
           </View>
         </View>
       </View>

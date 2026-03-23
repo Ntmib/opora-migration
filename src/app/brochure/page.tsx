@@ -28,14 +28,18 @@ export default function BrochurePage() {
           <h1 className="text-3xl md:text-4xl font-bold leading-tight">
             Памятка для трудовых мигрантов
           </h1>
-          <div className="flex items-center justify-center gap-6 mt-6">
-            <div className="flex flex-col items-center gap-1">
-              <img src="/images/logo-rcpm.jpg" alt="АНО РЦПМ" className="w-16 h-16 rounded-full object-cover bg-white" />
-              <span className="text-[10px] opacity-70 max-w-[100px] leading-tight">АНО «Региональный центр помощи мигрантам»</span>
+          <div className="flex items-start justify-center gap-12 mt-8">
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center p-2 shadow-lg">
+                <img src="/images/logo-rcpm.jpg" alt="АНО РЦПМ" className="w-20 h-20 rounded-full object-cover" />
+              </div>
+              <span className="text-xs opacity-90 max-w-[140px] leading-snug text-center">АНО «Региональный центр помощи мигрантам»</span>
             </div>
-            <div className="flex flex-col items-center gap-1">
-              <img src="/images/logo-ddn.png" alt="Дом дружбы народов" className="w-16 h-16 rounded-full object-cover" />
-              <span className="text-[10px] opacity-70 max-w-[100px] leading-tight">ГКУ СО «Дом дружбы народов»</span>
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center p-1 shadow-lg">
+                <img src="/images/logo-ddn.png" alt="Дом дружбы народов" className="w-[88px] h-[88px] rounded-full object-contain" />
+              </div>
+              <span className="text-xs opacity-90 max-w-[140px] leading-snug text-center">ГКУ СО «Дом дружбы народов»</span>
             </div>
           </div>
         </div>
