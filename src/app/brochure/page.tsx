@@ -101,7 +101,7 @@ export default function BrochurePage() {
               <span className="text-[11px] text-white/70 max-w-[130px] leading-snug text-center">ГКУ СО «Дом дружбы народов»</span>
             </div>
           </div>
-          <a href="/api/brochure-pdf" target="_blank" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#D4A843] text-[#0B2545] text-sm font-semibold hover:bg-[#c49a35] transition-colors shadow-lg print:hidden">
+          <a href="/api/brochure-pdf" download="pamyatka-migrantov.pdf" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#D4A843] text-[#0B2545] text-sm font-semibold hover:bg-[#c49a35] transition-colors shadow-lg print:hidden">
             <IconDownload />Скачать PDF
           </a>
         </div>
