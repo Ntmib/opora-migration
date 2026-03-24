@@ -9,8 +9,9 @@ import CookieBanner from "@/components/CookieBanner";
 export default function PublicShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const isAdmin = pathname.startsWith("/admin");
+  const isBrochure = pathname.startsWith("/brochure");
 
-  if (isAdmin) {
+  if (isAdmin || isBrochure) {
     return <>{children}</>;
   }
 
