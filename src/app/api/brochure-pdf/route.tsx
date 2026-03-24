@@ -36,15 +36,15 @@ Font.register({
   ],
 });
 
-const blue = "#0a3d6b";
-const blueLight = "#1e87f0";
+const blue = "#0B2545";
+const blueLight = "#D4A843";
 const grayBg = "#f3f4f6";
-const amber = "#fef3c7";
-const amberBorder = "#f59e0b";
+const amber = "#C2553A";
+const amberBorder = "#a8432c";
 
 const s = StyleSheet.create({
   page: { fontFamily: "Inter", fontSize: 10, color: "#1a1a1a", paddingTop: 40, paddingBottom: 50, paddingHorizontal: 40 },
-  cover: { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: blue, padding: 40 },
+  cover: { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#0B2545", padding: 40 },
   coverSub: { fontFamily: "Inter", fontSize: 10, color: "#ffffff", opacity: 0.8, marginBottom: 12, textTransform: "uppercase", letterSpacing: 2 },
   coverTitle: { fontFamily: "Inter", fontSize: 28, fontWeight: 700, color: "#ffffff", textAlign: "center", lineHeight: 1.3 },
   coverLine: { width: 60, height: 3, backgroundColor: blueLight, marginTop: 20, borderRadius: 2 },
@@ -58,11 +58,11 @@ const s = StyleSheet.create({
   cardTitle: { fontSize: 10, fontWeight: 600, color: "#1f2937", marginBottom: 4 },
   cardText: { fontSize: 9.5, color: "#4b5563", lineHeight: 1.5 },
   warning: { backgroundColor: amber, borderLeftWidth: 3, borderLeftColor: amberBorder, borderRadius: 4, padding: 10, marginBottom: 8 },
-  warningText: { fontSize: 9.5, color: "#78350f", lineHeight: 1.5 },
+  warningText: { fontSize: 9.5, color: "#ffffff", lineHeight: 1.5 },
   highlight: { backgroundColor: "#eff6ff", borderRadius: 8, padding: 10, marginBottom: 8 },
   highlightTitle: { fontSize: 10, fontWeight: 600, color: blue, marginBottom: 4 },
   stepRow: { flexDirection: "row", alignItems: "flex-start", marginBottom: 6 },
-  stepCircle: { width: 18, height: 18, borderRadius: 9, backgroundColor: blueLight, justifyContent: "center", alignItems: "center", marginRight: 8 },
+  stepCircle: { width: 18, height: 18, borderRadius: 9, backgroundColor: "#D4A843", justifyContent: "center", alignItems: "center", marginRight: 8 },
   stepNum: { fontSize: 9, fontWeight: 700, color: "#ffffff" },
   stepText: { fontSize: 9.5, color: "#374151", flex: 1, paddingTop: 2, lineHeight: 1.5 },
   statRow: { flexDirection: "row", gap: 12, marginBottom: 8 },
@@ -73,7 +73,7 @@ const s = StyleSheet.create({
   behaviorTitle: { fontSize: 10, fontWeight: 600, color: "#1f2937", marginBottom: 2 },
   behaviorText: { fontSize: 9.5, color: "#4b5563", lineHeight: 1.4 },
   li: { flexDirection: "row", marginBottom: 3 },
-  bullet: { fontSize: 9, color: blueLight, marginRight: 6, width: 8 },
+  bullet: { fontSize: 9, color: "#D4A843", marginRight: 6, width: 8 },
   liText: { fontSize: 9.5, color: "#4b5563", flex: 1, lineHeight: 1.5 },
   pageNum: { position: "absolute", bottom: 20, right: 40, fontSize: 8, color: "#9ca3af" },
 });
