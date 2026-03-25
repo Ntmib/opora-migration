@@ -1,0 +1,5089 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "lVp19",
+      "x": 0,
+      "y": 0,
+      "name": "Page 1 - Cover",
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#0A1A38",
+            "position": 0
+          },
+          {
+            "color": "#142D54",
+            "position": 0.5
+          },
+          {
+            "color": "#1B3A6B",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "xdGGX",
+          "x": 0,
+          "y": 0,
+          "name": "Content Wrapper",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            80,
+            56
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "RWWZV",
+              "name": "ministry",
+              "fill": "#FFFFFFAA",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "МИНИСТЕРСТВО ВНУТРЕННЕЙ ПОЛИТИКИ\nСАМАРСКОЙ ОБЛАСТИ",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "Jmeub",
+              "name": "midGroup",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "M3uQL",
+                  "name": "title",
+                  "fill": "$--text-white",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Памятка\nдля иностранных\nграждан\nв России",
+                  "lineHeight": 1.15,
+                  "textAlign": "center",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 72,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "MhHWw",
+                  "name": "goldLine",
+                  "fill": "$--accent-gold",
+                  "width": 80,
+                  "height": 4
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NLmXH",
+              "name": "bottomGroup",
+              "width": "fill_container",
+              "gap": 56,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cKumG",
+                  "name": "logo1",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tijJ1",
+                      "name": "logo1ph",
+                      "width": 100,
+                      "height": 100,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1774348924019.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 50,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Vh2oV",
+                      "name": "logo1text",
+                      "fill": "#FFFFFFBB",
+                      "textGrowth": "fixed-width",
+                      "width": 180,
+                      "content": "АНО «Региональный центр\nпомощи мигрантам»",
+                      "lineHeight": 1.4,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Jy319",
+                  "name": "logo2",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "M4M9R",
+                      "name": "logo2ph",
+                      "width": 120,
+                      "height": 120,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1774348916579.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 60,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ew6gA",
+                      "name": "logo2text",
+                      "fill": "#FFFFFFBB",
+                      "textGrowth": "fixed-width",
+                      "width": 180,
+                      "content": "ГКУ СО «Дом дружбы\nнародов»",
+                      "lineHeight": 1.5,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "aVX25",
+          "x": 650,
+          "y": -60,
+          "name": "deco-circle-lg",
+          "fill": "#FFFFFF08",
+          "width": 280,
+          "height": 280
+        },
+        {
+          "type": "ellipse",
+          "id": "5qjf5",
+          "x": -40,
+          "y": 950,
+          "name": "deco-circle-sm",
+          "fill": "#FFFFFF06",
+          "width": 160,
+          "height": 160
+        },
+        {
+          "type": "rectangle",
+          "id": "OBfqi",
+          "x": 720,
+          "y": 500,
+          "name": "deco-diamond",
+          "rotation": 45,
+          "fill": "#D4A84310",
+          "width": 100,
+          "height": 100
+        },
+        {
+          "type": "rectangle",
+          "id": "8vCVx",
+          "x": 60,
+          "y": 200,
+          "name": "deco-diamond-sm",
+          "rotation": 45,
+          "fill": "#FFFFFF06",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "type": "rectangle",
+          "id": "ZhuSR",
+          "x": 780,
+          "y": 100,
+          "name": "deco-line",
+          "fill": "#D4A84315",
+          "width": 2,
+          "height": 300
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "UYcrx",
+      "x": 940,
+      "y": 0,
+      "name": "Page 2 - Contents",
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#F0F4F8",
+            "position": 0
+          },
+          {
+            "color": "#E2E8F0",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "weiN7",
+          "x": 500,
+          "y": 300,
+          "name": "watermark-flag",
+          "opacity": 0.04,
+          "width": 300,
+          "height": 200,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774350959436.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "frame",
+          "id": "vp7Qb",
+          "x": 0,
+          "y": 0,
+          "name": "Content Wrapper",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            60,
+            56
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "bFUYs",
+              "name": "tocTitle",
+              "fill": "$--text-dark",
+              "content": "Содержание",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "23hKp",
+              "name": "tocList",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "fcBks",
+                  "name": "i1",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O7sFL",
+                      "name": "n1",
+                      "fill": "$--accent-red",
+                      "content": "1",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PIAb7",
+                      "name": "t1",
+                      "fill": "$--text-dark",
+                      "content": "Миграционный учёт",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mMWi5",
+                  "name": "i2",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IEic3",
+                      "name": "n2",
+                      "fill": "$--accent-red",
+                      "content": "2",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QTwZD",
+                      "name": "t2",
+                      "fill": "$--text-dark",
+                      "content": "Получение патента на работу",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "whn19",
+                  "name": "i3",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gYB0E",
+                      "name": "n3",
+                      "fill": "$--accent-red",
+                      "content": "3",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FUVdw",
+                      "name": "t3",
+                      "fill": "$--text-dark",
+                      "content": "Трудовой договор",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "y47uJ",
+                  "name": "i4",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kD19k",
+                      "name": "n4",
+                      "fill": "$--accent-red",
+                      "content": "4",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fksuF",
+                      "name": "t4",
+                      "fill": "$--text-dark",
+                      "content": "Виды ответственности",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7F1Cm",
+                  "name": "i5",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oIGzo",
+                      "name": "n5",
+                      "fill": "$--accent-red",
+                      "content": "5",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NRSQ4",
+                      "name": "t5",
+                      "fill": "$--text-dark",
+                      "content": "Как вести себя в России",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "R0RlP",
+                  "name": "i6",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Q6gsY",
+                      "name": "n6",
+                      "fill": "$--accent-red",
+                      "content": "6",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "l2HII",
+                      "name": "t6",
+                      "fill": "$--text-dark",
+                      "content": "Сотовая связь и интернет",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SXCNi",
+                  "name": "i7",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vor86",
+                      "name": "n7",
+                      "fill": "$--accent-red",
+                      "content": "7",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Kgpf3",
+                      "name": "t7",
+                      "fill": "$--text-dark",
+                      "content": "Семья и дети",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ofh1K",
+                  "name": "i8",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JLEMY",
+                      "name": "n8",
+                      "fill": "$--accent-red",
+                      "content": "8",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oC2M1",
+                      "name": "t8",
+                      "fill": "$--text-dark",
+                      "content": "Информация о Самарской области",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "YhJPR",
+          "x": 660,
+          "y": -50,
+          "name": "deco-circle-lg",
+          "fill": "#0D224406",
+          "width": 240,
+          "height": 240
+        },
+        {
+          "type": "ellipse",
+          "id": "bn4ji",
+          "x": -30,
+          "y": 980,
+          "name": "deco-circle-sm",
+          "fill": "#0D224404",
+          "width": 140,
+          "height": 140
+        },
+        {
+          "type": "rectangle",
+          "id": "XfQjQ",
+          "x": 740,
+          "y": 400,
+          "name": "deco-diamond",
+          "rotation": 45,
+          "fill": "#E4231306",
+          "width": 80,
+          "height": 80
+        },
+        {
+          "type": "ellipse",
+          "id": "o6nMW",
+          "x": 50,
+          "y": 150,
+          "name": "deco-accent-circle",
+          "fill": "#0D224404",
+          "width": 50,
+          "height": 50
+        },
+        {
+          "type": "rectangle",
+          "id": "8WrRg",
+          "x": 800,
+          "y": 200,
+          "name": "deco-line",
+          "fill": "#0D224408",
+          "width": 2,
+          "height": 200
+        },
+        {
+          "type": "frame",
+          "id": "imDmq",
+          "x": 0,
+          "y": 1038,
+          "name": "ornament-border",
+          "opacity": 0.08,
+          "width": 840,
+          "height": 150,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774350367855.png",
+            "mode": "fill"
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000040",
+            "offset": {
+              "x": 0,
+              "y": 4
+            },
+            "blur": 4
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "T5hfW",
+          "x": 0,
+          "y": 1038,
+          "name": "fade-gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#E2E8F0",
+                "position": 0
+              },
+              {
+                "color": "#E2E8F000",
+                "position": 1
+              }
+            ]
+          },
+          "width": 840,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WTi2m",
+      "x": 1880,
+      "y": 0,
+      "name": "Page 3 - Migration",
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#F0F4F8",
+            "position": 0
+          },
+          {
+            "color": "#E2E8F0",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Qq3zV",
+          "x": 550,
+          "y": 400,
+          "name": "watermark-matryoshka",
+          "opacity": 0.04,
+          "width": 250,
+          "height": 300,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774350984430.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "frame",
+          "id": "NLvdg",
+          "x": 0,
+          "y": 0,
+          "name": "Content Wrapper",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 48,
+          "children": [
+            {
+              "type": "text",
+              "id": "diGaV",
+              "name": "pgTitle",
+              "fill": "$--text-dark",
+              "content": "1. Миграционный учёт",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "zw6bu",
+              "name": "body1",
+              "fill": "$--text-dark-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Иностранный гражданин, въезжая в Россию, получает миграционную карту. В ней желательно указать цель «Работа» (но сейчас это не обязательно).",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "PQ6iZ",
+              "name": "body2",
+              "fill": "$--text-dark-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Приехав в Россию, нужно пройти обязательную дактилоскопическую регистрацию и фотографирование в течение 30 календарных дней со дня въезда.",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "4QAQJ",
+              "name": "card1",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 10,
+              "padding": [
+                16,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IztgX",
+                  "name": "card1title",
+                  "fill": "$--text-dark",
+                  "content": "Сроки постановки на учёт",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Jczk0",
+                  "name": "card1b1",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  30 дней — граждане ЕАЭС",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "M2ujO",
+                  "name": "card1b2",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  15 дней — граждане Узбекистана или Таджикистана",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "7bSL8",
+                  "name": "card1b3",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  7 дней — граждане других стран",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "W0sxF",
+              "name": "body3",
+              "fill": "$--text-dark-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Принимающая сторона (собственник жилья или организация) обязана поставить иностранного гражданина на миграционный учёт. Срок временного пребывания — до 90 суток.",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "jpE1z",
+              "name": "card2",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                16,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j9YBY",
+                  "name": "card2title",
+                  "fill": "$--text-dark",
+                  "content": "Продление пребывания",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "K29LI",
+                  "name": "card2b1",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Трудовой договор или договор ГПХ\n•  Оплаченный патент\n•  Документы на РВП или ВНЖ\n•  Заявление о приёме в гражданство\n•  Участие в Госпрограмме переселения\n•  Близкие родственники — граждане РФ",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qMjFe",
+              "name": "alert1",
+              "width": "fill_container",
+              "fill": "#C0392BB0",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF30"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 20
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#C0392B20",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 20
+                }
+              ],
+              "gap": 12,
+              "padding": [
+                14,
+                20
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "mfkUn",
+                  "name": "alertIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "triangle-alert",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                },
+                {
+                  "type": "text",
+                  "id": "IMLbX",
+                  "name": "alertText",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "С 1 декабря 2025 года сдавать отпечатки пальцев и фотографироваться нужно на всех пограничных пунктах. Эксперимент до 30 июня 2026 года.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "Naecd",
+          "x": 680,
+          "y": -40,
+          "name": "deco-circle-lg",
+          "fill": "#0D224406",
+          "width": 240,
+          "height": 240
+        },
+        {
+          "type": "ellipse",
+          "id": "5ddWA",
+          "x": -20,
+          "y": 1000,
+          "name": "deco-circle-sm",
+          "fill": "#0D224404",
+          "width": 140,
+          "height": 140
+        },
+        {
+          "type": "rectangle",
+          "id": "fbSeR",
+          "x": 730,
+          "y": 350,
+          "name": "deco-diamond",
+          "rotation": 45,
+          "fill": "#E4231306",
+          "width": 80,
+          "height": 80
+        },
+        {
+          "type": "ellipse",
+          "id": "j15QU",
+          "x": 70,
+          "y": 130,
+          "name": "deco-accent-circle",
+          "fill": "#0D224404",
+          "width": 50,
+          "height": 50
+        },
+        {
+          "type": "rectangle",
+          "id": "E6RoQ",
+          "x": 790,
+          "y": 250,
+          "name": "deco-line",
+          "fill": "#0D224408",
+          "width": 2,
+          "height": 200
+        },
+        {
+          "type": "frame",
+          "id": "qpP9L",
+          "x": 0,
+          "y": 1038,
+          "name": "ornament-border",
+          "opacity": 0.08,
+          "width": 840,
+          "height": 150,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774350398146.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "0vXWk",
+          "x": 0,
+          "y": 1038,
+          "name": "fade-gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#E2E8F0",
+                "position": 0
+              },
+              {
+                "color": "#E2E8F000",
+                "position": 1
+              }
+            ]
+          },
+          "width": 840,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "jtaHl",
+      "x": 2820,
+      "y": 0,
+      "name": "Page 4 - Patent",
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#F0F4F8",
+            "position": 0
+          },
+          {
+            "color": "#E2E8F0",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "a2REw",
+          "x": 520,
+          "y": 350,
+          "name": "watermark-cathedral",
+          "opacity": 0.05,
+          "width": 280,
+          "height": 320,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774351008719.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "frame",
+          "id": "hYPvc",
+          "x": 520,
+          "y": 350,
+          "name": "watermark-cathedral",
+          "opacity": 0.05,
+          "width": 280,
+          "height": 320,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774351006323.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "frame",
+          "id": "JTG0i",
+          "x": 0,
+          "y": 0,
+          "name": "Content Wrapper",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 48,
+          "children": [
+            {
+              "type": "text",
+              "id": "nInuy",
+              "name": "p4title",
+              "fill": "$--text-dark",
+              "content": "2. Получение патента на работу",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "OrBx0",
+              "name": "p4body1",
+              "fill": "$--text-dark-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Патент — это документ, который даёт право иностранному гражданину работать в России. Без патента работать нельзя — это нарушение закона.",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "jwRsc",
+              "name": "p4card1",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                16,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MNtEx",
+                  "name": "p4c1title",
+                  "fill": "$--text-dark",
+                  "content": "Важно знать",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Xjoq9",
+                  "name": "p4c1text",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Патент действует только в том регионе, где он выдан\n•  Работать можно только по указанной в патенте профессии\n•  Патент нужно оплачивать ежемесячно — авансовый платёж\n•  Срок действия патента — от 1 до 12 месяцев",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WML6v",
+              "name": "p4alert",
+              "width": "fill_container",
+              "fill": "#C0392BB0",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF30"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 20
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#C0392B20",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 20
+                }
+              ],
+              "gap": 12,
+              "padding": [
+                14,
+                20
+              ],
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "bzjc3",
+                  "name": "p4alertIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "triangle-alert",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                },
+                {
+                  "type": "text",
+                  "id": "ZzOmV",
+                  "name": "p4alertText",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Не оплатили патент вовремя — он перестанет действовать!",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pSaGJ",
+              "name": "p4card2",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                16,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ckahl",
+                  "name": "p4c2title",
+                  "fill": "$--text-dark",
+                  "content": "Документы для патента",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "W5vac",
+                  "name": "p4c2text",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Заявление о выдаче патента\n•  Паспорт с нотариальным переводом\n•  Миграционная карта (цель — «Работа»)\n•  Полис ДМС или договор с медучреждением\n•  Медицинские справки (здоровье, нарколог)\n•  Сертификат о знании русского языка\n•  Документ о постановке на миграционный учёт\n•  Фотографии 3×4 (матовые)\n•  ИНН (при наличии)\n•  Квитанция об оплате авансового платежа НДФЛ\n•  Документ о прохождении дактилоскопии",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PT1nr",
+              "name": "metricsRow",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RTds8",
+                  "name": "metric1",
+                  "width": "fill_container",
+                  "fill": "#14285580",
+                  "cornerRadius": "$--radius",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF18"
+                  },
+                  "effect": [
+                    {
+                      "type": "background_blur",
+                      "radius": 20
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#00000020",
+                      "offset": {
+                        "x": 0,
+                        "y": 4
+                      },
+                      "blur": 20
+                    }
+                  ],
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vfjIw",
+                      "name": "metric1val",
+                      "fill": "$--text-white",
+                      "content": "30 дней",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SEq1D",
+                      "name": "metric1label",
+                      "fill": "$--text-light",
+                      "content": "срок подачи документов",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4T4SQ",
+                  "name": "metric2",
+                  "width": "fill_container",
+                  "fill": "#14285580",
+                  "cornerRadius": "$--radius",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF18"
+                  },
+                  "effect": [
+                    {
+                      "type": "background_blur",
+                      "radius": 20
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#00000020",
+                      "offset": {
+                        "x": 0,
+                        "y": 4
+                      },
+                      "blur": 20
+                    }
+                  ],
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UVFMg",
+                      "name": "metric2val",
+                      "fill": "$--text-white",
+                      "content": "10 раб. дней",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EUgb2",
+                      "name": "metric2label",
+                      "fill": "$--text-light",
+                      "content": "срок оформления",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "PGBYE",
+          "x": 640,
+          "y": -70,
+          "name": "deco-circle-lg",
+          "fill": "#0D224406",
+          "width": 240,
+          "height": 240
+        },
+        {
+          "type": "ellipse",
+          "id": "0ey9j",
+          "x": -50,
+          "y": 960,
+          "name": "deco-circle-sm",
+          "fill": "#0D224404",
+          "width": 140,
+          "height": 140
+        },
+        {
+          "type": "rectangle",
+          "id": "mSKGC",
+          "x": 750,
+          "y": 450,
+          "name": "deco-diamond",
+          "rotation": 45,
+          "fill": "#E4231306",
+          "width": 80,
+          "height": 80
+        },
+        {
+          "type": "ellipse",
+          "id": "iwl14",
+          "x": 40,
+          "y": 170,
+          "name": "deco-accent-circle",
+          "fill": "#0D224404",
+          "width": 50,
+          "height": 50
+        },
+        {
+          "type": "rectangle",
+          "id": "12afU",
+          "x": 810,
+          "y": 180,
+          "name": "deco-line",
+          "fill": "#0D224408",
+          "width": 2,
+          "height": 200
+        },
+        {
+          "type": "frame",
+          "id": "KQn8y",
+          "x": 0,
+          "y": 1038,
+          "name": "ornament-border",
+          "opacity": 0.08,
+          "width": 840,
+          "height": 150,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774350424550.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "op2Wz",
+          "x": 0,
+          "y": 1038,
+          "name": "fade-gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#E2E8F0",
+                "position": 0
+              },
+              {
+                "color": "#E2E8F000",
+                "position": 1
+              }
+            ]
+          },
+          "width": 840,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "O1qA3",
+      "x": 3760,
+      "y": 0,
+      "name": "Page 5 - Labor Contract",
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#F0F4F8",
+            "position": 0
+          },
+          {
+            "color": "#E2E8F0",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "mEUXn",
+          "x": 500,
+          "y": 300,
+          "name": "watermark-bear",
+          "opacity": 0.04,
+          "width": 300,
+          "height": 280,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774351039077.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "frame",
+          "id": "GtBx6",
+          "x": 0,
+          "y": 1038,
+          "name": "ornament-border",
+          "opacity": 0.08,
+          "width": 840,
+          "height": 150,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774350451107.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "QUiCe",
+          "x": 0,
+          "y": 1038,
+          "name": "fade-gradient",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#E2E8F0",
+                "position": 0
+              },
+              {
+                "color": "#E2E8F000",
+                "position": 1
+              }
+            ]
+          },
+          "width": 840,
+          "height": 80
+        },
+        {
+          "type": "frame",
+          "id": "JuTF2",
+          "x": 0,
+          "y": 0,
+          "name": "Content Wrapper",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 28,
+          "padding": 56,
+          "children": [
+            {
+              "type": "text",
+              "id": "9TyIR",
+              "name": "title5",
+              "fill": "$--text-dark",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "3. Трудовой договор",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "xQwX6",
+              "name": "desc5",
+              "fill": "$--text-dark-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Трудовой договор — соглашение между работником и работодателем об их взаимных правах и обязанностях.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "td0Br",
+              "name": "card1",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ux266",
+                  "name": "card1title",
+                  "fill": "$--text-dark",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Обязанности работодателя",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "lGcXO",
+                  "name": "card1b1",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Без задержек выплачивать заработную плату",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "NsFKj",
+                  "name": "card1b2",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Предоставить безопасное рабочее место",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "BPyk1",
+                  "name": "card1b3",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Проинформировать о графике и инструкциях",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "M3Rdo",
+              "name": "card2",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j8HIH",
+                  "name": "card2title",
+                  "fill": "$--text-dark",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Права работника",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "iJWaH",
+                  "name": "card2b1",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Отказаться от опасных для жизни работ",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "he5Zt",
+                  "name": "card2b2",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Отказаться от работы, не указанной в договоре",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "IzatG",
+                  "name": "card2b3",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Приостановить работу при задержке зарплаты более 15 дней",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Mzlbt",
+                  "name": "card2b4",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Требовать копию договора и справки о зарплате",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "19VyO",
+              "name": "card3",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ySXot",
+                  "name": "card3title",
+                  "fill": "$--text-dark",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Обязанности работника",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "MJnFl",
+                  "name": "card3b1",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Добросовестно выполнять условия договора",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "QqY0E",
+                  "name": "card3b2",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Предупредить об увольнении за 14 дней",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "vs292",
+                  "name": "card3b3",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Соблюдать правила распорядка и ТБ",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Wy2o6",
+                  "name": "card3b4",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Бережно относиться к имуществу",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aVVsu",
+              "name": "alert5",
+              "width": "fill_container",
+              "fill": "#C0392BB0",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF30"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 20
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#C0392B20",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 20
+                }
+              ],
+              "gap": 12,
+              "padding": [
+                20,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "rGgNb",
+                  "name": "alertIcon5",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "triangle-alert",
+                  "iconFontFamily": "lucide",
+                  "fill": "$--text-white"
+                },
+                {
+                  "type": "text",
+                  "id": "cNYW3",
+                  "name": "alertText5",
+                  "fill": "$--text-white",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "В течение 2 месяцев после получения патента направьте в МВД уведомление о трудовой деятельности + копию договора.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "o7wS2",
+              "name": "pageNum5",
+              "fill": "$--text-muted",
+              "content": "5",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "z4EP3",
+          "x": 670,
+          "y": -30,
+          "name": "deco-circle-lg",
+          "fill": "#0D224406",
+          "width": 240,
+          "height": 240
+        },
+        {
+          "type": "ellipse",
+          "id": "STL0O",
+          "x": -40,
+          "y": 990,
+          "name": "deco-circle-sm",
+          "fill": "#0D224404",
+          "width": 140,
+          "height": 140
+        },
+        {
+          "type": "rectangle",
+          "id": "ZSJYQ",
+          "x": 720,
+          "y": 500,
+          "name": "deco-diamond",
+          "rotation": 45,
+          "fill": "#E4231306",
+          "width": 80,
+          "height": 80
+        },
+        {
+          "type": "ellipse",
+          "id": "1mI4T",
+          "x": 60,
+          "y": 110,
+          "name": "deco-accent-circle",
+          "fill": "#0D224404",
+          "width": 50,
+          "height": 50
+        },
+        {
+          "type": "rectangle",
+          "id": "aEFcE",
+          "x": 805,
+          "y": 150,
+          "name": "deco-line",
+          "fill": "#0D224408",
+          "width": 2,
+          "height": 200
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lKBUZ",
+      "x": 4700,
+      "y": 0,
+      "name": "Page 6 - Responsibility",
+      "clip": true,
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#F0F4F8",
+            "position": 0
+          },
+          {
+            "color": "#E2E8F0",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "bf9GO",
+          "x": 520,
+          "y": 380,
+          "name": "watermark-samovar",
+          "opacity": 0.04,
+          "width": 260,
+          "height": 300,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774350956218.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "frame",
+          "id": "vEvjk",
+          "x": 0,
+          "y": 0,
+          "name": "content6",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 28,
+          "padding": 56,
+          "children": [
+            {
+              "type": "text",
+              "id": "p5JAm",
+              "name": "title6",
+              "fill": "$--text-dark",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "4. Виды ответственности",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Du0Tm",
+              "name": "desc6",
+              "fill": "$--text-dark-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Россия — правовое государство. В зависимости от тяжести нарушения вы можете столкнуться с разными видами ответственности.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "5EFKw",
+              "name": "c6a",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FaCXX",
+                  "name": "c6at",
+                  "fill": "$--text-dark",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Миграционные нарушения",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Uq7fU",
+                  "name": "c6a1",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Нахождение в России без документов\n•  Нарушение правил миграционного учёта\n•  Работа без патента или по чужому региону/профессии\n•  Пребывание после окончания срока документов",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "99jgO",
+              "name": "c6b",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ve1bB",
+                  "name": "c6bt",
+                  "fill": "$--text-dark",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Административная ответственность",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "dpofm",
+                  "name": "c6b1",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Нарушения общественного порядка\n•  Нецензурная брань в общественных местах\n•  Оскорбительные приставания",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SSt18",
+              "name": "c6c",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cBF62",
+                  "name": "c6ct",
+                  "fill": "$--text-dark",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Уголовная ответственность",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "7QZ6W",
+                  "name": "c6c1",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Вандализм\n•  Причинение вреда здоровью\n•  Угон, кража, грабёж, вымогательство",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "QjjuD",
+              "name": "pn6",
+              "fill": "$--text-muted",
+              "content": "6",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "C0485",
+          "x": 670,
+          "y": -40,
+          "name": "c6a",
+          "fill": "#0D224406",
+          "width": 220,
+          "height": 220
+        },
+        {
+          "type": "ellipse",
+          "id": "iJBFt",
+          "x": -35,
+          "y": 960,
+          "name": "c6b",
+          "fill": "#0D224404",
+          "width": 150,
+          "height": 150
+        },
+        {
+          "type": "rectangle",
+          "id": "zrqiP",
+          "x": 730,
+          "y": 380,
+          "name": "c6c",
+          "rotation": 45,
+          "fill": "#E4231306",
+          "width": 80,
+          "height": 80
+        },
+        {
+          "type": "ellipse",
+          "id": "cs2i1",
+          "x": 40,
+          "y": 130,
+          "name": "c6d",
+          "fill": "#0D224404",
+          "width": 55,
+          "height": 55
+        },
+        {
+          "type": "rectangle",
+          "id": "x7ei8",
+          "x": 795,
+          "y": 180,
+          "name": "c6e",
+          "fill": "#0D224408",
+          "width": 2,
+          "height": 220
+        },
+        {
+          "type": "rectangle",
+          "id": "RFQMy",
+          "x": 60,
+          "y": 750,
+          "name": "c6f",
+          "rotation": 45,
+          "fill": "#0D224404",
+          "width": 70,
+          "height": 70
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lagUH",
+      "x": 6580,
+      "y": 0,
+      "name": "Page 8 - Telecom",
+      "clip": true,
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#F0F4F8",
+            "position": 0
+          },
+          {
+            "color": "#E2E8F0",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "GDw20",
+          "x": 540,
+          "y": 420,
+          "name": "watermark-balalaika",
+          "opacity": 0.04,
+          "width": 240,
+          "height": 320,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774351043108.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "frame",
+          "id": "Uyw5b",
+          "x": 0,
+          "y": 0,
+          "name": "content8",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 28,
+          "padding": 56,
+          "children": [
+            {
+              "type": "text",
+              "id": "nzaTF",
+              "name": "title7",
+              "fill": "$--text-dark",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "6. Сотовая связь и интернет",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "YHnrW",
+              "name": "alert7",
+              "width": "fill_container",
+              "fill": "#C0392BB0",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF30"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 20
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#C0392B20",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 20
+                }
+              ],
+              "gap": 12,
+              "padding": [
+                18,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "6aU21",
+                  "name": "alertIc7",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "info",
+                  "iconFontFamily": "lucide",
+                  "fill": "$--text-white"
+                },
+                {
+                  "type": "text",
+                  "id": "NarUB",
+                  "name": "alertTx7",
+                  "fill": "$--text-white",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "С 1 января 2025 года действуют особые правила покупки сим-карт для иностранных граждан.",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "s90y6",
+              "name": "docsCard",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Bj4ie",
+                  "name": "docsT",
+                  "fill": "$--text-dark",
+                  "content": "Документы",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Ncfbz",
+                  "name": "docsB",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Паспорт + нотариальный перевод\n•  СНИЛС",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "wHbzd",
+              "name": "procTitle",
+              "fill": "$--text-dark",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Порядок оформления:",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "AvDye",
+              "name": "stepsWrap",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "4hm8r",
+                  "name": "step1",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "igfwQ",
+                      "name": "step1n",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "$--accent-red",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "beuAu",
+                          "name": "step1nt",
+                          "fill": "$--text-white",
+                          "content": "1",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "DhBfj",
+                      "name": "step1t",
+                      "fill": "$--text-dark-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Зарегистрируйтесь на портале Госуслуг и подтвердите учётную запись",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "46SBe",
+                  "name": "step2",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "iis0Q",
+                      "name": "step2n",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "$--accent-red",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Dr7Nr",
+                          "name": "step2nt",
+                          "fill": "$--text-white",
+                          "content": "2",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CoXAk",
+                      "name": "step2t",
+                      "fill": "$--text-dark-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Зарегистрируйтесь в Единой биометрической системе и сдайте данные",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZSIcT",
+                  "name": "step3",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MlSjl",
+                      "name": "step3n",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "$--accent-red",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5KUTZ",
+                          "name": "step3nt",
+                          "fill": "$--text-white",
+                          "content": "3",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y7aJu",
+                      "name": "step3t",
+                      "fill": "$--text-dark-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Купите или переоформите сим-карту после подтверждения личности",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "KCWDc",
+              "name": "limCard",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RrX0o",
+                  "name": "limT",
+                  "fill": "$--text-dark",
+                  "content": "Ограничения",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "JBWUK",
+                  "name": "limB",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Максимум 10 сим-карт\n•  Нельзя оплачивать наличными анонимно\n•  Нельзя купить в интернете\n•  Сим-карта привязана к конкретному телефону",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mtVD0",
+              "name": "ruidCard",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WfJNk",
+                  "name": "ruidT",
+                  "fill": "$--text-dark",
+                  "content": "Приложение RUID",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "aL6Nq",
+                  "name": "ruidB",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Скачайте для заполнения заявления. Работает на русском, армянском, казахском, киргизском, таджикском, узбекском и английском. Для входа нужны логин и пароль от Госуслуг.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "2PEUC",
+              "name": "pageNum8",
+              "fill": "$--text-muted",
+              "content": "8",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "sR6Ap",
+          "x": 690,
+          "y": -50,
+          "name": "d8a",
+          "fill": "#0D224406",
+          "width": 230,
+          "height": 230
+        },
+        {
+          "type": "ellipse",
+          "id": "qRgk3",
+          "x": -30,
+          "y": 940,
+          "name": "d8b",
+          "fill": "#0D224404",
+          "width": 140,
+          "height": 140
+        },
+        {
+          "type": "rectangle",
+          "id": "9aB5S",
+          "x": 720,
+          "y": 450,
+          "name": "d8c",
+          "rotation": 45,
+          "fill": "#E4231306",
+          "width": 75,
+          "height": 75
+        },
+        {
+          "type": "ellipse",
+          "id": "kChKH",
+          "x": 45,
+          "y": 160,
+          "name": "d8d",
+          "fill": "#0D224404",
+          "width": 50,
+          "height": 50
+        },
+        {
+          "type": "rectangle",
+          "id": "hy5g9",
+          "x": 790,
+          "y": 150,
+          "name": "d8e",
+          "fill": "#0D224408",
+          "width": 2,
+          "height": 250
+        },
+        {
+          "type": "rectangle",
+          "id": "OjplB",
+          "x": 80,
+          "y": 850,
+          "name": "d8f",
+          "rotation": 45,
+          "fill": "#0D224404",
+          "width": 65,
+          "height": 65
+        },
+        {
+          "type": "frame",
+          "id": "4tOP5",
+          "x": 0,
+          "y": 1038,
+          "name": "ornament-border",
+          "opacity": 0.08,
+          "width": 840,
+          "height": 150,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774350448467.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "V4MEJ",
+          "x": 0,
+          "y": 1038,
+          "name": "ornament-fade",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#E2E8F0",
+                "position": 0
+              },
+              {
+                "color": "#E2E8F000",
+                "position": 1
+              }
+            ]
+          },
+          "width": 840,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "A0Pv8",
+      "x": 8460,
+      "y": 0,
+      "name": "Page 10 - Samara & Footer",
+      "clip": true,
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#0A1A38",
+            "position": 0
+          },
+          {
+            "color": "#142D54",
+            "position": 0.5
+          },
+          {
+            "color": "#1B3A6B",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "0RfD8",
+          "x": 0,
+          "y": 0,
+          "name": "content10",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 28,
+          "padding": 56,
+          "children": [
+            {
+              "type": "text",
+              "id": "Tb5RL",
+              "name": "title8",
+              "fill": "$--text-white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "8. Информация о Самарской области",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "b9gVX",
+              "name": "desc8a",
+              "fill": "$--text-light",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Самарскую область называют «сердцем России». Площадь — 53,6 тыс. кв. км. Основана в 1586 году. Сегодня здесь проживает более 3 млн человек.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "MEW4B",
+              "name": "desc8b",
+              "fill": "$--text-light",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "В составе — 10 городов и 27 муниципальных районов. Один из ведущих экономических регионов с театрами, музеями и природными достопримечательностями.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "7KJZm",
+              "name": "migCard",
+              "width": "fill_container",
+              "fill": "#1A356280",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF18"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#00000025",
+                  "offset": {
+                    "x": 0,
+                    "y": 6
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "btIFt",
+                  "name": "migT",
+                  "fill": "$--text-white",
+                  "content": "Миграционные центры",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Agfo6",
+                  "name": "migB",
+                  "fill": "$--text-light",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "г. Самара: ул. Кабельная, 13а, ул. Черногорская, 2\nг. Тольятти: Тупиковый проезд, 4",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OM2N6",
+              "name": "spacer8",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "7CkvX",
+              "name": "divider8",
+              "fill": "$--border-light",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "GOpgm",
+              "name": "tgRow",
+              "width": "fill_container",
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "JLPjV",
+                  "name": "tgIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "send",
+                  "iconFontFamily": "lucide",
+                  "fill": "$--text-muted"
+                },
+                {
+                  "type": "text",
+                  "id": "vYOnM",
+                  "name": "tgText",
+                  "fill": "$--text-muted",
+                  "content": "@fadnrf   @samddn   @chestniymigrant   @RCPM63_RU",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "hiOCn",
+              "name": "footer8",
+              "fill": "$--text-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Министерство внутренней политики Самарской области",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "o1M2f",
+              "name": "pageNum8",
+              "fill": "$--text-muted",
+              "content": "10",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "NuxT2",
+          "x": 650,
+          "y": -60,
+          "name": "d10a",
+          "fill": "#FFFFFF08",
+          "width": 280,
+          "height": 280
+        },
+        {
+          "type": "ellipse",
+          "id": "GoNQM",
+          "x": -40,
+          "y": 950,
+          "name": "d10b",
+          "fill": "#FFFFFF06",
+          "width": 170,
+          "height": 170
+        },
+        {
+          "type": "rectangle",
+          "id": "2e95j",
+          "x": 710,
+          "y": 480,
+          "name": "d10c",
+          "rotation": 45,
+          "fill": "#D4A84310",
+          "width": 100,
+          "height": 100
+        },
+        {
+          "type": "ellipse",
+          "id": "oJtsm",
+          "x": 50,
+          "y": 220,
+          "name": "d10d",
+          "fill": "#FFFFFF06",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "type": "rectangle",
+          "id": "iY9Kp",
+          "x": 780,
+          "y": 100,
+          "name": "d10e",
+          "fill": "#D4A84315",
+          "width": 2,
+          "height": 300
+        },
+        {
+          "type": "rectangle",
+          "id": "gl97A",
+          "x": 70,
+          "y": 700,
+          "name": "d10f",
+          "rotation": 45,
+          "fill": "#FFFFFF05",
+          "width": 80,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ItFPr",
+      "x": 5640,
+      "y": 0,
+      "name": "Page 7 - Behavior",
+      "clip": true,
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#F0F4F8",
+            "position": 0
+          },
+          {
+            "color": "#E2E8F0",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "0DHKU",
+          "x": 30,
+          "y": 350,
+          "name": "watermark-birch",
+          "opacity": 0.04,
+          "width": 220,
+          "height": 400,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774351002796.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "frame",
+          "id": "phbL3",
+          "x": 0,
+          "y": 0,
+          "name": "content7",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 28,
+          "padding": 56,
+          "children": [
+            {
+              "type": "text",
+              "id": "d8GUE",
+              "name": "title6b",
+              "fill": "$--text-dark",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "5. Как вести себя в России",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "joUpG",
+              "name": "beh1",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                18,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IZ9K0",
+                  "name": "beh1t",
+                  "fill": "$--text-dark",
+                  "content": "Соблюдайте законы",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "AAefu",
+                  "name": "beh1d",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Все проблемы можно решить законными путями. Не нужно давать взятки.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uoeTd",
+              "name": "beh2",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                18,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0qZef",
+                  "name": "beh2t",
+                  "fill": "$--text-dark",
+                  "content": "Уважайте старших",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "nF9M4",
+                  "name": "beh2d",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Прислушивайтесь к советам, уступайте место в транспорте.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "n6F30",
+              "name": "beh3",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                18,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2NFku",
+                  "name": "beh3t",
+                  "fill": "$--text-dark",
+                  "content": "Будьте сдержаны",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "IBeUd",
+                  "name": "beh3d",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Не проявляйте эмоции слишком бурно в общественных местах.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QKiv7",
+              "name": "beh4",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                18,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "32El9",
+                  "name": "beh4t",
+                  "fill": "$--text-dark",
+                  "content": "Будьте вежливы",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "bbC1w",
+                  "name": "beh4d",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Если нужна помощь — попросите вежливо, на «Вы».",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qTkLh",
+              "name": "beh5",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                18,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ryr0w",
+                  "name": "beh5t",
+                  "fill": "$--text-dark",
+                  "content": "Уважайте культуру",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "7sNoy",
+                  "name": "beh5d",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Россия — многонациональная страна. Уважайте местные традиции.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oLpiO",
+              "name": "beh6",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                18,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bxd6L",
+                  "name": "beh6t",
+                  "fill": "$--text-dark",
+                  "content": "Уважайте комфорт",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "9Xelz",
+                  "name": "beh6d",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Не принято громко говорить, слушать музыку, толкаться.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "GXSpF",
+              "name": "pn7",
+              "fill": "$--text-muted",
+              "content": "7",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "TC79Y",
+          "x": 680,
+          "y": -30,
+          "name": "c7a",
+          "fill": "#0D224406",
+          "width": 200,
+          "height": 200
+        },
+        {
+          "type": "ellipse",
+          "id": "Rp75A",
+          "x": -25,
+          "y": 1000,
+          "name": "c7b",
+          "fill": "#0D224404",
+          "width": 130,
+          "height": 130
+        },
+        {
+          "type": "rectangle",
+          "id": "aVONc",
+          "x": 750,
+          "y": 500,
+          "name": "c7c",
+          "rotation": 45,
+          "fill": "#E4231306",
+          "width": 70,
+          "height": 70
+        },
+        {
+          "type": "ellipse",
+          "id": "dHDOm",
+          "x": 55,
+          "y": 180,
+          "name": "c7d",
+          "fill": "#0D224404",
+          "width": 45,
+          "height": 45
+        },
+        {
+          "type": "rectangle",
+          "id": "Gdv5m",
+          "x": 805,
+          "y": 250,
+          "name": "c7e",
+          "fill": "#0D224408",
+          "width": 2,
+          "height": 180
+        },
+        {
+          "type": "rectangle",
+          "id": "kmF4S",
+          "x": 700,
+          "y": 900,
+          "name": "c7f",
+          "rotation": 45,
+          "fill": "#0D224404",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "type": "frame",
+          "id": "gNG7k",
+          "x": 0,
+          "y": 1038,
+          "name": "ornament-border",
+          "opacity": 0.08,
+          "width": 840,
+          "height": 150,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774350366511.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "91AfZ",
+          "x": 0,
+          "y": 1038,
+          "name": "ornament-fade",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#E2E8F0",
+                "position": 0
+              },
+              {
+                "color": "#E2E8F000",
+                "position": 1
+              }
+            ]
+          },
+          "width": 840,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "QgtKr",
+      "x": 7520,
+      "y": 0,
+      "name": "Page 9 - Family",
+      "clip": true,
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#F0F4F8",
+            "position": 0
+          },
+          {
+            "color": "#E2E8F0",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "yCp29",
+          "x": 40,
+          "y": 400,
+          "name": "watermark-kremlin",
+          "opacity": 0.04,
+          "width": 320,
+          "height": 280,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774351082013.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "frame",
+          "id": "0Iuie",
+          "x": 0,
+          "y": 0,
+          "name": "content9",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 28,
+          "padding": 56,
+          "children": [
+            {
+              "type": "text",
+              "id": "Gj3bf",
+              "name": "title7b",
+              "fill": "$--text-dark",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "7. Семья и дети",
+              "fontFamily": "Space Grotesk",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Dw993",
+              "name": "desc7b",
+              "fill": "$--text-dark-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Знание языка и культуры — непременное условие для жизни и работы в России. Дети старше 6,5 лет обязательно должны получать образование.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "avcVY",
+              "name": "schoolCard",
+              "width": "fill_container",
+              "fill": "#FFFFFF70",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF88"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 24
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#0D224412",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 24
+                }
+              ],
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SyqFt",
+                  "name": "schoolT",
+                  "fill": "$--text-dark",
+                  "content": "Документы для школы",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "xQZnC",
+                  "name": "schoolB",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "•  Свидетельство о рождении\n•  Документы о законном пребывании (ВНЖ, РВП, виза)\n•  Документ о дактилоскопии ребёнка\n•  Паспорт или свидетельство о рождении ребёнка\n•  СНИЛС (ваш и ребёнка), ИНН\n•  Медицинское заключение",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qfe7g",
+              "name": "alert7b",
+              "width": "fill_container",
+              "fill": "#C0392BB0",
+              "cornerRadius": "$--radius",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF30"
+              },
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 20
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#C0392B20",
+                  "offset": {
+                    "x": 0,
+                    "y": 4
+                  },
+                  "blur": 20
+                }
+              ],
+              "gap": 12,
+              "padding": [
+                18,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "CfkTl",
+                  "name": "alertIc7b",
+                  "width": 22,
+                  "height": 22,
+                  "iconFontName": "info",
+                  "iconFontFamily": "lucide",
+                  "fill": "$--text-white"
+                },
+                {
+                  "type": "text",
+                  "id": "Mfm5N",
+                  "name": "alertTx7b",
+                  "fill": "$--text-white",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "За неисполнение обязанности по обучению ребёнка — административная ответственность.",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "LCVgD",
+              "name": "pageNum7",
+              "fill": "$--text-muted",
+              "content": "9",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "RJo7K",
+          "x": 660,
+          "y": -45,
+          "name": "d9a",
+          "fill": "#0D224406",
+          "width": 250,
+          "height": 250
+        },
+        {
+          "type": "ellipse",
+          "id": "1Md9L",
+          "x": -40,
+          "y": 920,
+          "name": "d9b",
+          "fill": "#0D224404",
+          "width": 160,
+          "height": 160
+        },
+        {
+          "type": "rectangle",
+          "id": "jXrmu",
+          "x": 740,
+          "y": 350,
+          "name": "d9c",
+          "rotation": 45,
+          "fill": "#E4231306",
+          "width": 85,
+          "height": 85
+        },
+        {
+          "type": "ellipse",
+          "id": "mytqE",
+          "x": 35,
+          "y": 200,
+          "name": "d9d",
+          "fill": "#0D224404",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "type": "rectangle",
+          "id": "r2dgx",
+          "x": 800,
+          "y": 300,
+          "name": "d9e",
+          "fill": "#0D224408",
+          "width": 2,
+          "height": 200
+        },
+        {
+          "type": "rectangle",
+          "id": "EAJ7r",
+          "x": 680,
+          "y": 800,
+          "name": "d9f",
+          "rotation": 45,
+          "fill": "#0D224404",
+          "width": 55,
+          "height": 55
+        },
+        {
+          "type": "frame",
+          "id": "EEHaA",
+          "x": 0,
+          "y": 1038,
+          "name": "ornament-border",
+          "opacity": 0.08,
+          "width": 840,
+          "height": 150,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774350467919.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "dQ8v2",
+          "x": 0,
+          "y": 1038,
+          "name": "ornament-fade",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#E2E8F0",
+                "position": 0
+              },
+              {
+                "color": "#E2E8F000",
+                "position": 1
+              }
+            ]
+          },
+          "width": 840,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "MESKH",
+      "x": 9400,
+      "y": 0,
+      "name": "Page 11 - Back Side",
+      "clip": true,
+      "width": 840,
+      "height": 1188,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 180,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "#F0F4F8",
+            "position": 0
+          },
+          {
+            "color": "#E2E8F0",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "b1BJI",
+          "x": 480,
+          "y": 350,
+          "name": "watermark-firebird",
+          "opacity": 0.04,
+          "width": 300,
+          "height": 300,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774351134410.png",
+            "mode": "fill"
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "1OF9d",
+          "x": 660,
+          "y": -50,
+          "name": "deco-circle-lg",
+          "fill": "#0D224406",
+          "width": 240,
+          "height": 240
+        },
+        {
+          "type": "ellipse",
+          "id": "WCxZ8",
+          "x": -30,
+          "y": 980,
+          "name": "deco-circle-sm",
+          "fill": "#0D224404",
+          "width": 140,
+          "height": 140
+        },
+        {
+          "type": "rectangle",
+          "id": "nWmL0",
+          "x": 740,
+          "y": 400,
+          "name": "deco-diamond",
+          "rotation": 45,
+          "fill": "#E4231306",
+          "width": 80,
+          "height": 80
+        },
+        {
+          "type": "ellipse",
+          "id": "u92sJ",
+          "x": 50,
+          "y": 150,
+          "name": "deco-accent-circle",
+          "fill": "#0D224404",
+          "width": 50,
+          "height": 50
+        },
+        {
+          "type": "rectangle",
+          "id": "OpBIu",
+          "x": 800,
+          "y": 200,
+          "name": "deco-line",
+          "fill": "#0D224408",
+          "width": 2,
+          "height": 200
+        },
+        {
+          "type": "frame",
+          "id": "xpTU6",
+          "x": 0,
+          "y": 0,
+          "name": "Content Wrapper",
+          "clip": true,
+          "width": 840,
+          "height": 1188,
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            60,
+            56
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "9BJbM",
+              "name": "Top Section - MVD & Emergency",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "padding": "$--spacing-sm",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "2hd6J",
+                  "name": "mvdCard",
+                  "width": "fill_container",
+                  "fill": "$--bg-card-light",
+                  "cornerRadius": "$--radius",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$--border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": "$--spacing-sm",
+                  "padding": "$--spacing-md",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "mh6AL",
+                      "name": "mvdTop",
+                      "width": "fill_container",
+                      "gap": "$--spacing-md",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "G220v",
+                          "name": "qrBox",
+                          "width": 100,
+                          "height": 100,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./qr-codes/qr-mvd.png",
+                            "mode": "fit"
+                          },
+                          "cornerRadius": "$--radius-sm",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$--border-light"
+                          },
+                          "layout": "none"
+                        },
+                        {
+                          "type": "text",
+                          "id": "DxZww",
+                          "name": "mvdTitle",
+                          "fill": "$--text-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Сервисы МВД по вопросам миграции",
+                          "fontFamily": "Space Grotesk",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "KU1hc",
+                      "name": "mvdDesc",
+                      "fill": "$--text-dark-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Отсканируйте QR-код для доступа к сервисам МВД по вопросам миграции",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "2A7dN",
+                  "name": "emergCard",
+                  "width": "fill_container",
+                  "fill": "$--bg-card-light",
+                  "cornerRadius": "$--radius",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$--border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": "$--spacing-sm",
+                  "padding": "$--spacing-md",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "F1VRt",
+                      "name": "emergTitle",
+                      "fill": "$--text-dark",
+                      "content": "Экстренные службы",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "s7hIG",
+                      "name": "row1",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "2KQ5u",
+                          "name": "num1",
+                          "fill": "$--accent-red",
+                          "content": "112",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "l3fII",
+                          "name": "dash1",
+                          "fill": "$--text-dark-secondary",
+                          "content": "—",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tQom9",
+                          "name": "desc1",
+                          "fill": "$--text-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Единая служба вызова экстренных служб",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kR6iB",
+                      "name": "row2",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cPup4",
+                          "name": "num2",
+                          "fill": "$--accent-red",
+                          "content": "101",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GVq8b",
+                          "name": "dash2",
+                          "fill": "$--text-dark-secondary",
+                          "content": "—",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "b37jx",
+                          "name": "desc2",
+                          "fill": "$--text-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Пожарная служба",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2d2gm",
+                      "name": "row3",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "55r4k",
+                          "name": "num3",
+                          "fill": "$--accent-red",
+                          "content": "102",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "veIWR",
+                          "name": "dash3",
+                          "fill": "$--text-dark-secondary",
+                          "content": "—",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dXivt",
+                          "name": "desc3",
+                          "fill": "$--text-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Полиция",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "9b5N2",
+                      "name": "row4",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8uwKV",
+                          "name": "num4",
+                          "fill": "$--accent-red",
+                          "content": "103",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ovm86",
+                          "name": "dash4",
+                          "fill": "$--text-dark-secondary",
+                          "content": "—",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Wyo3c",
+                          "name": "desc4",
+                          "fill": "$--text-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Скорая медицинская помощь",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kiI4F",
+              "name": "Bottom Section - Telegram",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "9vToZ",
+                  "name": "tg-title",
+                  "fill": "$--text-dark",
+                  "content": "Наши Telegram-каналы",
+                  "fontFamily": "Space Grotesk",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "2n5oN",
+                  "name": "tg-desc",
+                  "fill": "$--text-dark-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Подпишитесь на наши каналы для получения актуальной информации",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "WYo2r",
+                  "name": "channels-row-1",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "3taPp",
+                      "name": "channel-fadnrf",
+                      "width": "fill_container",
+                      "fill": "$--bg-card-light",
+                      "cornerRadius": "$--radius",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D224412"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "dxHC9",
+                          "name": "qr-fadnrf",
+                          "width": 100,
+                          "height": 100,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./qr-codes/qr-fadnrf.png",
+                            "mode": "fit"
+                          },
+                          "cornerRadius": "$--radius-sm",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#0D224420"
+                          },
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "hJtEL",
+                          "name": "icon1",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "send",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--bg-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vxhDN",
+                          "name": "label1",
+                          "fill": "$--text-dark",
+                          "content": "@fadnrf",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "4ioc1",
+                          "name": "sublabel1",
+                          "fill": "$--text-dark-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "ФАДН России",
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wNaQD",
+                          "name": "url1",
+                          "fill": "$--text-dark-secondary",
+                          "content": "t.me/fadnrf",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mXxhR",
+                      "name": "channel-samddn",
+                      "width": "fill_container",
+                      "fill": "$--bg-card-light",
+                      "cornerRadius": "$--radius",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D224412"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "BZLLn",
+                          "name": "qr-samddn",
+                          "width": 100,
+                          "height": 100,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./qr-codes/qr-samddn.png",
+                            "mode": "fit"
+                          },
+                          "cornerRadius": "$--radius-sm",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#0D224420"
+                          },
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "pAJiK",
+                          "name": "icon2",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "send",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--bg-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XlER8",
+                          "name": "label2",
+                          "fill": "$--text-dark",
+                          "content": "@samddn",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XZTcK",
+                          "name": "sublabel2",
+                          "fill": "$--text-dark-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Дом дружбы народов",
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "6zY1p",
+                          "name": "url2",
+                          "fill": "$--text-dark-secondary",
+                          "content": "t.me/samddn",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "utpgv",
+                  "name": "channels-row-2",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zRalt",
+                      "name": "channel-chestniymigrant",
+                      "width": "fill_container",
+                      "fill": "$--bg-card-light",
+                      "cornerRadius": "$--radius",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D224412"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "bzyXY",
+                          "name": "qr-chestniymigrant",
+                          "width": 100,
+                          "height": 100,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./qr-codes/qr-chestniymigrant.png",
+                            "mode": "fit"
+                          },
+                          "cornerRadius": "$--radius-sm",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#0D224420"
+                          },
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "ZELYI",
+                          "name": "icon3",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "send",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--bg-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gynB8",
+                          "name": "label3",
+                          "fill": "$--text-dark",
+                          "content": "@chestniymigrant",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "7YFHo",
+                          "name": "sublabel3",
+                          "fill": "$--text-dark-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Честный мигрант",
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "X4Mvb",
+                          "name": "url3",
+                          "fill": "$--text-dark-secondary",
+                          "content": "t.me/chestniymigrant",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6iDhK",
+                      "name": "channel-rcpm63",
+                      "width": "fill_container",
+                      "fill": "$--bg-card-light",
+                      "cornerRadius": "$--radius",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D224412"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "JxsvO",
+                          "name": "qr-rcpm63",
+                          "width": 100,
+                          "height": 100,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./qr-codes/qr-rcpm63.png",
+                            "mode": "fit"
+                          },
+                          "cornerRadius": "$--radius-sm",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#0D224420"
+                          },
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "OS9gw",
+                          "name": "icon4",
+                          "width": 28,
+                          "height": 28,
+                          "iconFontName": "send",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--bg-primary"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mkr49",
+                          "name": "label4",
+                          "fill": "$--text-dark",
+                          "content": "@RCPM63_RU",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2ZPNq",
+                          "name": "sublabel4",
+                          "fill": "$--text-dark-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "РЦПМ Самарской области",
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "H4poh",
+                          "name": "url4",
+                          "fill": "$--text-dark-secondary",
+                          "content": "t.me/RCPM63_RU",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "k5KQP",
+              "name": "spacer11",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "rectangle",
+              "id": "d31sO",
+              "name": "divider11",
+              "fill": "$--border-light",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "TTjWy",
+              "name": "footer11",
+              "fill": "$--text-dark-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Министерство внутренней политики Самарской области",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "--accent-gold": {
+      "type": "color",
+      "value": "#D4A843"
+    },
+    "--accent-red": {
+      "type": "color",
+      "value": "#E42313"
+    },
+    "--bg-alert": {
+      "type": "color",
+      "value": "#C0392B"
+    },
+    "--bg-card": {
+      "type": "color",
+      "value": "#1A3562"
+    },
+    "--bg-card-light": {
+      "type": "color",
+      "value": "#E8EDF4"
+    },
+    "--bg-primary": {
+      "type": "color",
+      "value": "#0D2244"
+    },
+    "--bg-secondary": {
+      "type": "color",
+      "value": "#142D54"
+    },
+    "--border-light": {
+      "type": "color",
+      "value": "#2A4A7A"
+    },
+    "--radius": {
+      "type": "number",
+      "value": 12
+    },
+    "--radius-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "--spacing-lg": {
+      "type": "number",
+      "value": 40
+    },
+    "--spacing-md": {
+      "type": "number",
+      "value": 24
+    },
+    "--spacing-sm": {
+      "type": "number",
+      "value": 12
+    },
+    "--spacing-xl": {
+      "type": "number",
+      "value": 56
+    },
+    "--surface-white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "--text-dark": {
+      "type": "color",
+      "value": "#0D2244"
+    },
+    "--text-dark-secondary": {
+      "type": "color",
+      "value": "#4A5568"
+    },
+    "--text-light": {
+      "type": "color",
+      "value": "#B8C9E0"
+    },
+    "--text-muted": {
+      "type": "color",
+      "value": "#7A8FAA"
+    },
+    "--text-white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    }
+  }
+}
