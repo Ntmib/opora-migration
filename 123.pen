@@ -1,5 +1,5 @@
 {
-  "version": "2.8",
+  "version": "2.9",
   "children": [
     {
       "type": "frame",
@@ -105,30 +105,32 @@
               "id": "NLmXH",
               "name": "bottomGroup",
               "width": "fill_container",
-              "gap": 56,
+              "layout": "vertical",
+              "gap": 24,
               "justifyContent": "center",
+              "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
                   "id": "cKumG",
                   "name": "logo1",
                   "layout": "vertical",
-                  "gap": 14,
+                  "gap": 10,
                   "alignItems": "center",
                   "children": [
                     {
                       "type": "frame",
                       "id": "tijJ1",
                       "name": "logo1ph",
-                      "width": 100,
-                      "height": 100,
+                      "width": 130,
+                      "height": 130,
                       "fill": {
                         "type": "image",
                         "enabled": true,
                         "url": "./images/generated-1774348924019.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 50,
+                      "cornerRadius": 65,
                       "layout": "vertical",
                       "justifyContent": "center",
                       "alignItems": "center"
@@ -137,15 +139,15 @@
                       "type": "text",
                       "id": "Vh2oV",
                       "name": "logo1text",
-                      "fill": "#FFFFFFBB",
+                      "fill": "#FFFFFFEE",
                       "textGrowth": "fixed-width",
                       "width": 180,
                       "content": "АНО «Региональный центр\nпомощи мигрантам»",
                       "lineHeight": 1.4,
                       "textAlign": "center",
                       "fontFamily": "Inter",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
+                      "fontSize": 15,
+                      "fontWeight": "600"
                     }
                   ]
                 },
@@ -154,15 +156,15 @@
                   "id": "Jy319",
                   "name": "logo2",
                   "layout": "vertical",
-                  "gap": 14,
+                  "gap": 8,
                   "alignItems": "center",
                   "children": [
                     {
                       "type": "frame",
                       "id": "M4M9R",
                       "name": "logo2ph",
-                      "width": 120,
-                      "height": 120,
+                      "width": 70,
+                      "height": 70,
                       "fill": {
                         "type": "image",
                         "enabled": true,
@@ -178,14 +180,14 @@
                       "type": "text",
                       "id": "Ew6gA",
                       "name": "logo2text",
-                      "fill": "#FFFFFFBB",
+                      "fill": "#FFFFFF88",
                       "textGrowth": "fixed-width",
                       "width": 180,
                       "content": "ГКУ СО «Дом дружбы\nнародов»",
                       "lineHeight": 1.5,
                       "textAlign": "center",
                       "fontFamily": "Inter",
-                      "fontSize": 13,
+                      "fontSize": 10,
                       "fontWeight": "normal"
                     }
                   ]
@@ -4595,10 +4597,117 @@
                   "id": "9vToZ",
                   "name": "tg-title",
                   "fill": "$--text-dark",
-                  "content": "Наши Telegram-каналы",
+                  "content": "АНО «Региональный центр помощи мигрантам»",
                   "fontFamily": "Space Grotesk",
                   "fontSize": 22,
-                  "fontWeight": "700"
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "6ln1k",
+                  "name": "rcpmBlock",
+                  "width": "fill_container",
+                  "fill": "$--bg-card-light",
+                  "cornerRadius": "$--radius",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 2,
+                    "fill": "#E4231330"
+                  },
+                  "gap": 32,
+                  "padding": 24,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Hlii0",
+                      "name": "qrTg",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "gsgbm",
+                          "name": "qrTgImg",
+                          "width": 130,
+                          "height": 130,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./qr-codes/qr-rcpm63-telegram.png",
+                            "mode": "fit"
+                          },
+                          "cornerRadius": 8
+                        },
+                        {
+                          "type": "text",
+                          "id": "kdDxT",
+                          "fill": "#000000",
+                          "content": "Telegram",
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aamo4",
+                          "fill": "#000000",
+                          "content": "t.me/rcpm63_ru",
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Cvd3w",
+                      "name": "qrMax",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Tgrb3",
+                          "name": "qrMaxImg",
+                          "width": 130,
+                          "height": 130,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./qr-codes/qr-rcpm63-max.png",
+                            "mode": "fit"
+                          },
+                          "cornerRadius": 8
+                        },
+                        {
+                          "type": "text",
+                          "id": "7I8PK",
+                          "fill": "#000000",
+                          "content": "Max",
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "W05aW",
+                          "fill": "#000000",
+                          "content": "max.ru/join/rcpm63",
+                          "textAlign": "center",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "text",
@@ -4614,11 +4723,21 @@
                   "fontWeight": "normal"
                 },
                 {
+                  "type": "text",
+                  "id": "ro4ZD",
+                  "name": "otherTitle",
+                  "fill": "#000000",
+                  "content": "Другие каналы",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
                   "type": "frame",
                   "id": "WYo2r",
                   "name": "channels-row-1",
                   "width": "fill_container",
-                  "gap": 24,
+                  "gap": 16,
                   "justifyContent": "center",
                   "children": [
                     {
@@ -4634,16 +4753,16 @@
                         "fill": "#0D224412"
                       },
                       "layout": "vertical",
-                      "gap": 12,
-                      "padding": 20,
+                      "gap": 8,
+                      "padding": 12,
                       "alignItems": "center",
                       "children": [
                         {
                           "type": "frame",
                           "id": "dxHC9",
                           "name": "qr-fadnrf",
-                          "width": 100,
-                          "height": 100,
+                          "width": 80,
+                          "height": 80,
                           "fill": {
                             "type": "image",
                             "enabled": true,
@@ -4718,16 +4837,16 @@
                         "fill": "#0D224412"
                       },
                       "layout": "vertical",
-                      "gap": 12,
-                      "padding": 20,
+                      "gap": 8,
+                      "padding": 12,
                       "alignItems": "center",
                       "children": [
                         {
                           "type": "frame",
                           "id": "BZLLn",
                           "name": "qr-samddn",
-                          "width": 100,
-                          "height": 100,
+                          "width": 80,
+                          "height": 80,
                           "fill": {
                             "type": "image",
                             "enabled": true,
@@ -4788,17 +4907,7 @@
                           "fontWeight": "normal"
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "utpgv",
-                  "name": "channels-row-2",
-                  "width": "fill_container",
-                  "gap": 24,
-                  "justifyContent": "center",
-                  "children": [
+                    },
                     {
                       "type": "frame",
                       "id": "zRalt",
@@ -4812,16 +4921,16 @@
                         "fill": "#0D224412"
                       },
                       "layout": "vertical",
-                      "gap": 12,
-                      "padding": 20,
+                      "gap": 8,
+                      "padding": 12,
                       "alignItems": "center",
                       "children": [
                         {
                           "type": "frame",
                           "id": "bzyXY",
                           "name": "qr-chestniymigrant",
-                          "width": 100,
-                          "height": 100,
+                          "width": 80,
+                          "height": 80,
                           "fill": {
                             "type": "image",
                             "enabled": true,
@@ -4877,90 +4986,6 @@
                           "name": "url3",
                           "fill": "$--text-dark-secondary",
                           "content": "t.me/chestniymigrant",
-                          "fontFamily": "Inter",
-                          "fontSize": 11,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "6iDhK",
-                      "name": "channel-rcpm63",
-                      "width": "fill_container",
-                      "fill": "$--bg-card-light",
-                      "cornerRadius": "$--radius",
-                      "stroke": {
-                        "align": "inside",
-                        "thickness": 1,
-                        "fill": "#0D224412"
-                      },
-                      "layout": "vertical",
-                      "gap": 12,
-                      "padding": 20,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "JxsvO",
-                          "name": "qr-rcpm63",
-                          "width": 100,
-                          "height": 100,
-                          "fill": {
-                            "type": "image",
-                            "enabled": true,
-                            "url": "./qr-codes/qr-rcpm63.png",
-                            "mode": "fit"
-                          },
-                          "cornerRadius": "$--radius-sm",
-                          "stroke": {
-                            "align": "inside",
-                            "thickness": 1,
-                            "fill": "#0D224420"
-                          },
-                          "layout": "vertical",
-                          "justifyContent": "center",
-                          "alignItems": "center"
-                        },
-                        {
-                          "type": "icon_font",
-                          "id": "OS9gw",
-                          "name": "icon4",
-                          "width": 28,
-                          "height": 28,
-                          "iconFontName": "send",
-                          "iconFontFamily": "lucide",
-                          "fill": "$--bg-primary"
-                        },
-                        {
-                          "type": "text",
-                          "id": "mkr49",
-                          "name": "label4",
-                          "fill": "$--text-dark",
-                          "content": "@RCPM63_RU",
-                          "fontFamily": "Inter",
-                          "fontSize": 14,
-                          "fontWeight": "600"
-                        },
-                        {
-                          "type": "text",
-                          "id": "2ZPNq",
-                          "name": "sublabel4",
-                          "fill": "$--text-dark-secondary",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "РЦПМ Самарской области",
-                          "textAlign": "center",
-                          "fontFamily": "Inter",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "H4poh",
-                          "name": "url4",
-                          "fill": "$--text-dark-secondary",
-                          "content": "t.me/RCPM63_RU",
                           "fontFamily": "Inter",
                           "fontSize": 11,
                           "fontWeight": "normal"
