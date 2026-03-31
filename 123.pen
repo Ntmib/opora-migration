@@ -19,21 +19,47 @@
         },
         "colors": [
           {
-            "color": "#0A1A38",
+            "color": "#F0F4F8",
             "position": 0
           },
           {
-            "color": "#142D54",
-            "position": 0.5
-          },
-          {
-            "color": "#1B3A6B",
+            "color": "#E2E8F0",
             "position": 1
           }
         ]
       },
       "layout": "none",
       "children": [
+        {
+          "type": "rectangle",
+          "id": "ESMUf",
+          "layoutPosition": "absolute",
+          "x": 16,
+          "y": 16,
+          "name": "outerFrame",
+          "width": 808,
+          "height": 1156,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#1A356280"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "gVutO",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 20,
+          "name": "innerFrame",
+          "width": 800,
+          "height": 1148,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1A356250"
+          }
+        },
         {
           "type": "frame",
           "id": "xdGGX",
@@ -56,7 +82,7 @@
               "type": "text",
               "id": "RWWZV",
               "name": "ministry",
-              "fill": "#FFFFFFAA",
+              "fill": "#0D2244AA",
               "textGrowth": "fixed-width",
               "width": "fill_container",
               "content": "МИНИСТЕРСТВО ВНУТРЕННЕЙ ПОЛИТИКИ\nСАМАРСКОЙ ОБЛАСТИ",
@@ -80,7 +106,7 @@
                   "type": "text",
                   "id": "M3uQL",
                   "name": "title",
-                  "fill": "$--text-white",
+                  "fill": "#0D2244",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "Памятка\nдля иностранных\nграждан\nв России",
@@ -93,8 +119,11 @@
                 {
                   "type": "rectangle",
                   "id": "MhHWw",
+                  "x": 324,
+                  "y": 366,
                   "name": "goldLine",
-                  "fill": "$--accent-gold",
+                  "enabled": false,
+                  "fill": "#D4A843",
                   "width": 80,
                   "height": 4
                 }
@@ -105,32 +134,30 @@
               "id": "NLmXH",
               "name": "bottomGroup",
               "width": "fill_container",
-              "layout": "vertical",
-              "gap": 24,
+              "gap": 40,
               "justifyContent": "center",
-              "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
                   "id": "cKumG",
                   "name": "logo1",
                   "layout": "vertical",
-                  "gap": 10,
+                  "gap": 8,
                   "alignItems": "center",
                   "children": [
                     {
                       "type": "frame",
                       "id": "tijJ1",
                       "name": "logo1ph",
-                      "width": 130,
-                      "height": 130,
+                      "width": 100,
+                      "height": 100,
                       "fill": {
                         "type": "image",
                         "enabled": true,
                         "url": "./images/generated-1774348924019.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 65,
+                      "cornerRadius": 50,
                       "layout": "vertical",
                       "justifyContent": "center",
                       "alignItems": "center"
@@ -139,15 +166,37 @@
                       "type": "text",
                       "id": "Vh2oV",
                       "name": "logo1text",
-                      "fill": "#FFFFFFEE",
+                      "fill": "#0D2244CC",
                       "textGrowth": "fixed-width",
                       "width": 180,
                       "content": "АНО «Региональный центр\nпомощи мигрантам»",
                       "lineHeight": 1.4,
                       "textAlign": "center",
                       "fontFamily": "Inter",
-                      "fontSize": 15,
+                      "fontSize": 11,
                       "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gB4BU",
+                      "name": "phoneLine",
+                      "fill": "#0D224488",
+                      "content": "+7 (846) 211-01-24",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MX2Ax",
+                      "name": "emailLine",
+                      "fill": "#0D224488",
+                      "content": "rcpm@mmc63.ru",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -163,8 +212,8 @@
                       "type": "frame",
                       "id": "M4M9R",
                       "name": "logo2ph",
-                      "width": 70,
-                      "height": 70,
+                      "width": 100,
+                      "height": 100,
                       "fill": {
                         "type": "image",
                         "enabled": true,
@@ -180,19 +229,36 @@
                       "type": "text",
                       "id": "Ew6gA",
                       "name": "logo2text",
-                      "fill": "#FFFFFF88",
+                      "fill": "#0D224499",
                       "textGrowth": "fixed-width",
                       "width": 180,
                       "content": "ГКУ СО «Дом дружбы\nнародов»",
                       "lineHeight": 1.5,
                       "textAlign": "center",
                       "fontFamily": "Inter",
-                      "fontSize": 10,
+                      "fontSize": 11,
                       "fontWeight": "normal"
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "id": "K6a9n",
+              "layoutPosition": "absolute",
+              "x": 270,
+              "y": 720,
+              "name": "illustration",
+              "opacity": 0.3,
+              "width": 300,
+              "height": 200,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1774625772817.png",
+                "mode": "fill"
+              }
             }
           ]
         },
@@ -202,7 +268,7 @@
           "x": 650,
           "y": -60,
           "name": "deco-circle-lg",
-          "fill": "#FFFFFF08",
+          "fill": "#0D224408",
           "width": 280,
           "height": 280
         },
@@ -212,7 +278,7 @@
           "x": -40,
           "y": 950,
           "name": "deco-circle-sm",
-          "fill": "#FFFFFF06",
+          "fill": "#0D224406",
           "width": 160,
           "height": 160
         },
@@ -234,7 +300,7 @@
           "y": 200,
           "name": "deco-diamond-sm",
           "rotation": 45,
-          "fill": "#FFFFFF06",
+          "fill": "#0D224406",
           "width": 60,
           "height": 60
         },
@@ -247,6 +313,50 @@
           "fill": "#D4A84315",
           "width": 2,
           "height": 300
+        },
+        {
+          "type": "ellipse",
+          "id": "p9jdt",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 17,
+          "name": "corner1",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "Cprj2",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 17,
+          "name": "corner2",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "8RB6c",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 1165,
+          "name": "corner3",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "J19m7",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 1165,
+          "name": "corner4",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
         }
       ]
     },
@@ -570,6 +680,78 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "id": "jACAr",
+              "layoutPosition": "absolute",
+              "x": 56,
+              "y": 1148,
+              "name": "f1",
+              "width": 728,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TiRbe",
+                  "width": 16,
+                  "height": 16,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1774348924019.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "Ewkdr",
+                  "fill": "#0D224466",
+                  "content": "АНО «РЦПМ»",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "i7z1L",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "naqGl",
+                  "fill": "#0D224466",
+                  "content": "+7 (846) 211-01-24",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "J7FrG",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "97xyu",
+                  "fill": "#0D224466",
+                  "content": "rcpm@mmc63.ru",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                }
+              ]
             }
           ]
         },
@@ -677,6 +859,80 @@
           },
           "width": 840,
           "height": 80
+        },
+        {
+          "type": "rectangle",
+          "id": "up9EA",
+          "layoutPosition": "absolute",
+          "x": 16,
+          "y": 16,
+          "name": "outerFrame",
+          "width": 808,
+          "height": 1156,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#1A356280"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "iv843",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 20,
+          "name": "innerFrame",
+          "width": 800,
+          "height": 1148,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1A356250"
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "YQ3qD",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 17,
+          "name": "corner1",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "AW8Bl",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 17,
+          "name": "corner2",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "MMQ1G",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 1165,
+          "name": "corner3",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "NWEnd",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 1165,
+          "name": "corner4",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
         }
       ]
     },
@@ -991,6 +1247,78 @@
                   "fontWeight": "500"
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "id": "jT2jr",
+              "layoutPosition": "absolute",
+              "x": 56,
+              "y": 1148,
+              "name": "f1",
+              "width": 728,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PMk2Q",
+                  "width": 16,
+                  "height": 16,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1774348924019.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "rBhub",
+                  "fill": "#0D224466",
+                  "content": "АНО «РЦПМ»",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "qSf79",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "2HXzG",
+                  "fill": "#0D224466",
+                  "content": "+7 (846) 211-01-24",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "L2zgN",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "jEQ0R",
+                  "fill": "#0D224466",
+                  "content": "rcpm@mmc63.ru",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                }
+              ]
             }
           ]
         },
@@ -1088,6 +1416,80 @@
           },
           "width": 840,
           "height": 80
+        },
+        {
+          "type": "rectangle",
+          "id": "Fucpz",
+          "layoutPosition": "absolute",
+          "x": 16,
+          "y": 16,
+          "name": "outerFrame",
+          "width": 808,
+          "height": 1156,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#1A356280"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "cEnYD",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 20,
+          "name": "innerFrame",
+          "width": 800,
+          "height": 1148,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1A356250"
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "y8o8n",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 17,
+          "name": "corner1",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "ENF3y",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 17,
+          "name": "corner2",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "jr8KX",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 1165,
+          "name": "corner3",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "a1p9V",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 1165,
+          "name": "corner4",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
         }
       ]
     },
@@ -1487,6 +1889,78 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "frame",
+              "id": "5Uax0",
+              "layoutPosition": "absolute",
+              "x": 56,
+              "y": 1148,
+              "name": "f1",
+              "width": 728,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "aNxUa",
+                  "width": 16,
+                  "height": 16,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1774348924019.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "B75FF",
+                  "fill": "#0D224466",
+                  "content": "АНО «РЦПМ»",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "N4dl8",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "GkVS9",
+                  "fill": "#0D224466",
+                  "content": "+7 (846) 211-01-24",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "DYBQw",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "sCaq0",
+                  "fill": "#0D224466",
+                  "content": "rcpm@mmc63.ru",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                }
+              ]
             }
           ]
         },
@@ -1584,6 +2058,80 @@
           },
           "width": 840,
           "height": 80
+        },
+        {
+          "type": "rectangle",
+          "id": "e4F1s",
+          "layoutPosition": "absolute",
+          "x": 16,
+          "y": 16,
+          "name": "outerFrame",
+          "width": 808,
+          "height": 1156,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#1A356280"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "GPeiQ",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 20,
+          "name": "innerFrame",
+          "width": 800,
+          "height": 1148,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1A356250"
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "kmzEx",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 17,
+          "name": "corner1",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "AQden",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 17,
+          "name": "corner2",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "vJx6T",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 1165,
+          "name": "corner3",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "XwpyY",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 1165,
+          "name": "corner4",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
         }
       ]
     },
@@ -2064,6 +2612,78 @@
               "fontFamily": "Inter",
               "fontSize": 14,
               "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "LGSSC",
+              "layoutPosition": "absolute",
+              "x": 56,
+              "y": 1148,
+              "name": "f1",
+              "width": 728,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "h5CBB",
+                  "width": 16,
+                  "height": 16,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1774348924019.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "KHay6",
+                  "fill": "#0D224466",
+                  "content": "АНО «РЦПМ»",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "mb7hP",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "SxsF5",
+                  "fill": "#0D224466",
+                  "content": "+7 (846) 211-01-24",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "6jom3",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "LBVTy",
+                  "fill": "#0D224466",
+                  "content": "rcpm@mmc63.ru",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                }
+              ]
             }
           ]
         },
@@ -2117,6 +2737,80 @@
           "fill": "#0D224408",
           "width": 2,
           "height": 200
+        },
+        {
+          "type": "rectangle",
+          "id": "dHpKG",
+          "layoutPosition": "absolute",
+          "x": 16,
+          "y": 16,
+          "name": "outerFrame",
+          "width": 808,
+          "height": 1156,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#1A356280"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "FH4dZ",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 20,
+          "name": "innerFrame",
+          "width": 800,
+          "height": 1148,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1A356250"
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "gLiCj",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 17,
+          "name": "corner1",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "mJuyO",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 17,
+          "name": "corner2",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "TRmDb",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 1165,
+          "name": "corner3",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "wTVIh",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 1165,
+          "name": "corner4",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
         }
       ]
     },
@@ -2931,6 +3625,78 @@
               "fontFamily": "Inter",
               "fontSize": 14,
               "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "i7WhD",
+              "layoutPosition": "absolute",
+              "x": 56,
+              "y": 1148,
+              "name": "f1",
+              "width": 728,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "At7OZ",
+                  "width": 16,
+                  "height": 16,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1774348924019.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "rtukt",
+                  "fill": "#0D224466",
+                  "content": "АНО «РЦПМ»",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "QCOOa",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "M1Kek",
+                  "fill": "#0D224466",
+                  "content": "+7 (846) 211-01-24",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "UlnP5",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "0VuGp",
+                  "fill": "#0D224466",
+                  "content": "rcpm@mmc63.ru",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                }
+              ]
             }
           ]
         },
@@ -3039,6 +3805,80 @@
           },
           "width": 840,
           "height": 80
+        },
+        {
+          "type": "rectangle",
+          "id": "Mz8iN",
+          "layoutPosition": "absolute",
+          "x": 16,
+          "y": 16,
+          "name": "outerFrame",
+          "width": 808,
+          "height": 1156,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#1A356280"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "KOGwF",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 20,
+          "name": "innerFrame",
+          "width": 800,
+          "height": 1148,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1A356250"
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "RKhY6",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 17,
+          "name": "corner1",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "2js8C",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 17,
+          "name": "corner2",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "kdvZq",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 1165,
+          "name": "corner3",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "Enm1k",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 1165,
+          "name": "corner4",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
         }
       ]
     },
@@ -3061,15 +3901,11 @@
         },
         "colors": [
           {
-            "color": "#0A1A38",
+            "color": "#F0F4F8",
             "position": 0
           },
           {
-            "color": "#142D54",
-            "position": 0.5
-          },
-          {
-            "color": "#1B3A6B",
+            "color": "#E2E8F0",
             "position": 1
           }
         ]
@@ -3093,7 +3929,7 @@
               "type": "text",
               "id": "Tb5RL",
               "name": "title8",
-              "fill": "$--text-white",
+              "fill": "$--text-dark",
               "textGrowth": "fixed-width",
               "width": "fill_container",
               "content": "8. Информация о Самарской области",
@@ -3105,7 +3941,7 @@
               "type": "text",
               "id": "b9gVX",
               "name": "desc8a",
-              "fill": "$--text-light",
+              "fill": "$--text-dark",
               "textGrowth": "fixed-width",
               "width": "fill_container",
               "content": "Самарскую область называют «сердцем России». Площадь — 53,6 тыс. кв. км. Основана в 1586 году. Сегодня здесь проживает более 3 млн человек.",
@@ -3118,7 +3954,7 @@
               "type": "text",
               "id": "MEW4B",
               "name": "desc8b",
-              "fill": "$--text-light",
+              "fill": "$--text-dark-secondary",
               "textGrowth": "fixed-width",
               "width": "fill_container",
               "content": "В составе — 10 городов и 27 муниципальных районов. Один из ведущих экономических регионов с театрами, музеями и природными достопримечательностями.",
@@ -3129,67 +3965,11 @@
             },
             {
               "type": "frame",
-              "id": "7KJZm",
-              "name": "migCard",
-              "width": "fill_container",
-              "fill": "#1A356280",
-              "cornerRadius": "$--radius",
-              "stroke": {
-                "align": "inside",
-                "thickness": 1,
-                "fill": "#FFFFFF18"
-              },
-              "effect": [
-                {
-                  "type": "background_blur",
-                  "radius": 24
-                },
-                {
-                  "type": "shadow",
-                  "shadowType": "outer",
-                  "color": "#00000025",
-                  "offset": {
-                    "x": 0,
-                    "y": 6
-                  },
-                  "blur": 24
-                }
-              ],
-              "layout": "vertical",
-              "gap": 12,
-              "padding": 24,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "btIFt",
-                  "name": "migT",
-                  "fill": "$--text-white",
-                  "content": "Миграционные центры",
-                  "fontFamily": "Space Grotesk",
-                  "fontSize": 20,
-                  "fontWeight": "600"
-                },
-                {
-                  "type": "text",
-                  "id": "Agfo6",
-                  "name": "migB",
-                  "fill": "$--text-light",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "г. Самара: ул. Кабельная, 13а, ул. Черногорская, 2\nг. Тольятти: Тупиковый проезд, 4",
-                  "lineHeight": 1.6,
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "frame",
               "id": "OM2N6",
               "name": "spacer8",
               "width": "fill_container",
-              "height": "fill_container"
+              "height": "fill_container",
+              "fill": "#0D22440A"
             },
             {
               "type": "rectangle",
@@ -3216,13 +3996,13 @@
                   "height": 18,
                   "iconFontName": "send",
                   "iconFontFamily": "lucide",
-                  "fill": "$--text-muted"
+                  "fill": "$--text-dark-secondary"
                 },
                 {
                   "type": "text",
                   "id": "vYOnM",
                   "name": "tgText",
-                  "fill": "$--text-muted",
+                  "fill": "$--text-dark-secondary",
                   "content": "@fadnrf   @samddn   @chestniymigrant   @RCPM63_RU",
                   "fontFamily": "Inter",
                   "fontSize": 14,
@@ -3234,7 +4014,7 @@
               "type": "text",
               "id": "hiOCn",
               "name": "footer8",
-              "fill": "$--text-muted",
+              "fill": "$--text-dark-secondary",
               "textGrowth": "fixed-width",
               "width": "fill_container",
               "content": "Министерство внутренней политики Самарской области",
@@ -3247,7 +4027,7 @@
               "type": "text",
               "id": "o1M2f",
               "name": "pageNum8",
-              "fill": "$--text-muted",
+              "fill": "$--text-dark-secondary",
               "content": "10",
               "fontFamily": "Inter",
               "fontSize": 14,
@@ -3261,7 +4041,7 @@
           "x": 650,
           "y": -60,
           "name": "d10a",
-          "fill": "#FFFFFF08",
+          "fill": "#0D224408",
           "width": 280,
           "height": 280
         },
@@ -3271,7 +4051,7 @@
           "x": -40,
           "y": 950,
           "name": "d10b",
-          "fill": "#FFFFFF06",
+          "fill": "#0D224406",
           "width": 170,
           "height": 170
         },
@@ -3292,7 +4072,7 @@
           "x": 50,
           "y": 220,
           "name": "d10d",
-          "fill": "#FFFFFF06",
+          "fill": "#0D224406",
           "width": 60,
           "height": 60
         },
@@ -3313,9 +4093,83 @@
           "y": 700,
           "name": "d10f",
           "rotation": 45,
-          "fill": "#FFFFFF05",
+          "fill": "#0D224406",
           "width": 80,
           "height": 80
+        },
+        {
+          "type": "rectangle",
+          "id": "bUKAY",
+          "layoutPosition": "absolute",
+          "x": 16,
+          "y": 16,
+          "name": "outerFrame",
+          "width": 808,
+          "height": 1156,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#1A356280"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "vYjvw",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 20,
+          "name": "innerFrame",
+          "width": 800,
+          "height": 1148,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1A356250"
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "TTh0w",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 17,
+          "name": "corner1",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "v6DkY",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 17,
+          "name": "corner2",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "P8u4r",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 1165,
+          "name": "corner3",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "IetKw",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 1165,
+          "name": "corner4",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
         }
       ]
     },
@@ -3759,6 +4613,78 @@
               "fontFamily": "Inter",
               "fontSize": 14,
               "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "Y5pIh",
+              "layoutPosition": "absolute",
+              "x": 56,
+              "y": 1148,
+              "name": "f1",
+              "width": 728,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "00EFi",
+                  "width": 16,
+                  "height": 16,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1774348924019.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "HhaXK",
+                  "fill": "#0D224466",
+                  "content": "АНО «РЦПМ»",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "7yypk",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "O5VAL",
+                  "fill": "#0D224466",
+                  "content": "+7 (846) 211-01-24",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "SJh4m",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "lP1GR",
+                  "fill": "#0D224466",
+                  "content": "rcpm@mmc63.ru",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                }
+              ]
             }
           ]
         },
@@ -3867,6 +4793,80 @@
           },
           "width": 840,
           "height": 80
+        },
+        {
+          "type": "rectangle",
+          "id": "ODwCP",
+          "layoutPosition": "absolute",
+          "x": 16,
+          "y": 16,
+          "name": "outerFrame",
+          "width": 808,
+          "height": 1156,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#1A356280"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "RGYX1",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 20,
+          "name": "innerFrame",
+          "width": 800,
+          "height": 1148,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1A356250"
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "3wAoR",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 17,
+          "name": "corner1",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "ebORx",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 17,
+          "name": "corner2",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "lxOto",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 1165,
+          "name": "corner3",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "WINHr",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 1165,
+          "name": "corner4",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
         }
       ]
     },
@@ -4080,6 +5080,78 @@
               "fontFamily": "Inter",
               "fontSize": 14,
               "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "SOFtU",
+              "layoutPosition": "absolute",
+              "x": 56,
+              "y": 1148,
+              "name": "f1",
+              "width": 728,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kROhr",
+                  "width": 16,
+                  "height": 16,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1774348924019.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "mqc3u",
+                  "fill": "#0D224466",
+                  "content": "АНО «РЦПМ»",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "aO2tH",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "EaZwX",
+                  "fill": "#0D224466",
+                  "content": "+7 (846) 211-01-24",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "nnOzT",
+                  "fill": "#0D224433",
+                  "content": "·",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "VUKdF",
+                  "fill": "#0D224466",
+                  "content": "rcpm@mmc63.ru",
+                  "fontFamily": "Inter",
+                  "fontSize": 9,
+                  "fontWeight": "normal"
+                }
+              ]
             }
           ]
         },
@@ -4188,6 +5260,80 @@
           },
           "width": 840,
           "height": 80
+        },
+        {
+          "type": "rectangle",
+          "id": "9DzqP",
+          "layoutPosition": "absolute",
+          "x": 16,
+          "y": 16,
+          "name": "outerFrame",
+          "width": 808,
+          "height": 1156,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#1A356280"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "e4QJu",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 20,
+          "name": "innerFrame",
+          "width": 800,
+          "height": 1148,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1A356250"
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "kKImI",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 17,
+          "name": "corner1",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "RR4gn",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 17,
+          "name": "corner2",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "RQgQP",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 1165,
+          "name": "corner3",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "W2nVr",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 1165,
+          "name": "corner4",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
         }
       ]
     },
@@ -4298,10 +5444,10 @@
           "width": 840,
           "height": 1188,
           "layout": "vertical",
-          "gap": 32,
+          "gap": 12,
           "padding": [
-            60,
-            56
+            30,
+            40
           ],
           "children": [
             {
@@ -4310,8 +5456,8 @@
               "name": "Top Section - MVD & Emergency",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": 32,
-              "padding": "$--spacing-sm",
+              "gap": 6,
+              "padding": 6,
               "children": [
                 {
                   "type": "frame",
@@ -4326,8 +5472,8 @@
                     "fill": "$--border-light"
                   },
                   "layout": "vertical",
-                  "gap": "$--spacing-sm",
-                  "padding": "$--spacing-md",
+                  "gap": 6,
+                  "padding": 10,
                   "children": [
                     {
                       "type": "frame",
@@ -4399,8 +5545,8 @@
                     "fill": "$--border-light"
                   },
                   "layout": "vertical",
-                  "gap": "$--spacing-sm",
-                  "padding": "$--spacing-md",
+                  "gap": 4,
+                  "padding": 10,
                   "children": [
                     {
                       "type": "text",
@@ -4590,7 +5736,7 @@
               "name": "Bottom Section - Telegram",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": 24,
+              "gap": 8,
               "children": [
                 {
                   "type": "text",
@@ -4614,8 +5760,8 @@
                     "thickness": 2,
                     "fill": "#E4231330"
                   },
-                  "gap": 32,
-                  "padding": 24,
+                  "gap": 16,
+                  "padding": 12,
                   "justifyContent": "center",
                   "alignItems": "center",
                   "children": [
@@ -4631,8 +5777,8 @@
                           "type": "frame",
                           "id": "gsgbm",
                           "name": "qrTgImg",
-                          "width": 130,
-                          "height": 130,
+                          "width": 100,
+                          "height": 100,
                           "fill": {
                             "type": "image",
                             "enabled": true,
@@ -4675,8 +5821,8 @@
                           "type": "frame",
                           "id": "Tgrb3",
                           "name": "qrMaxImg",
-                          "width": 130,
-                          "height": 130,
+                          "width": 100,
+                          "height": 100,
                           "fill": {
                             "type": "image",
                             "enabled": true,
@@ -4710,6 +5856,298 @@
                   ]
                 },
                 {
+                  "type": "frame",
+                  "id": "7KJZm",
+                  "name": "migCard",
+                  "width": "fill_container",
+                  "fill": "$--bg-card-light",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#0D224415"
+                  },
+                  "effect": [
+                    {
+                      "type": "background_blur",
+                      "radius": 24
+                    },
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#00000025",
+                      "offset": {
+                        "x": 0,
+                        "y": 6
+                      },
+                      "blur": 24
+                    }
+                  ],
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PaAXO",
+                      "name": "rcpmTitle",
+                      "fill": "$--text-dark",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "АНО «Региональный центр помощи мигрантам»",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "btIFt",
+                      "x": 24,
+                      "y": 24,
+                      "name": "migT",
+                      "enabled": false,
+                      "fill": "$--text-white",
+                      "content": "Миграционные центры",
+                      "fontFamily": "Space Grotesk",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Agfo6",
+                      "x": 24,
+                      "y": 24,
+                      "name": "migB",
+                      "enabled": false,
+                      "fill": "$--text-light",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container(680)",
+                      "content": "г. Самара: ул. Кабельная, 13а, ул. Черногорская, 2\nг. Тольятти: Тупиковый проезд, 4",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "u50Vc",
+                      "name": "scheduleBlock",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 8,
+                      "gap": 6,
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sVZq4",
+                          "fill": "$--text-dark",
+                          "content": "График работы:",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dBxW2",
+                          "fill": "$--text-dark-secondary",
+                          "content": "пн–пт 8:00–16:00",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VK0c2",
+                      "name": "card1",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D224412"
+                      },
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": [
+                        8,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QslZe",
+                          "fill": "$--accent-red",
+                          "content": "г. Самара",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "njGeJ",
+                          "fill": "$--text-dark",
+                          "content": "ул. Черногорская, д. 2, 3 этаж",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "eZCUc",
+                          "name": "tag1",
+                          "fill": "$--bg-card-light",
+                          "cornerRadius": 4,
+                          "padding": [
+                            2,
+                            8
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "0H6ml",
+                              "fill": "$--text-dark-secondary",
+                              "content": "Многофункциональный миграционный центр",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "98g6h",
+                      "name": "card2",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D224412"
+                      },
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": [
+                        8,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mvUTY",
+                          "fill": "$--accent-red",
+                          "content": "г. Самара",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "01Tb4",
+                          "fill": "$--text-dark",
+                          "content": "ул. Кабельная, д. 13А",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LO9N1",
+                          "name": "tag2",
+                          "fill": "$--bg-card-light",
+                          "cornerRadius": 4,
+                          "padding": [
+                            2,
+                            8
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "0HP5Z",
+                              "fill": "$--text-dark-secondary",
+                              "content": "Многофункциональный миграционный центр",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YyreA",
+                      "name": "card3",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0D224412"
+                      },
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": [
+                        8,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "m2Et1",
+                          "fill": "$--accent-red",
+                          "content": "г. Тольятти",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "WbdpZ",
+                          "fill": "$--text-dark",
+                          "content": "проезд Тупиковый, здание 4, 3 этаж",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qaLTS",
+                          "name": "tag3",
+                          "fill": "$--bg-card-light",
+                          "cornerRadius": 4,
+                          "padding": [
+                            2,
+                            8
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "AmPCG",
+                              "fill": "$--text-dark-secondary",
+                              "content": "Многофункциональный миграционный центр",
+                              "fontFamily": "Inter",
+                              "fontSize": 9,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
                   "type": "text",
                   "id": "2n5oN",
                   "name": "tg-desc",
@@ -4737,7 +6175,7 @@
                   "id": "WYo2r",
                   "name": "channels-row-1",
                   "width": "fill_container",
-                  "gap": 16,
+                  "gap": 8,
                   "justifyContent": "center",
                   "children": [
                     {
@@ -4753,16 +6191,16 @@
                         "fill": "#0D224412"
                       },
                       "layout": "vertical",
-                      "gap": 8,
-                      "padding": 12,
+                      "gap": 4,
+                      "padding": 8,
                       "alignItems": "center",
                       "children": [
                         {
                           "type": "frame",
                           "id": "dxHC9",
                           "name": "qr-fadnrf",
-                          "width": 80,
-                          "height": 80,
+                          "width": 60,
+                          "height": 60,
                           "fill": {
                             "type": "image",
                             "enabled": true,
@@ -4837,16 +6275,16 @@
                         "fill": "#0D224412"
                       },
                       "layout": "vertical",
-                      "gap": 8,
-                      "padding": 12,
+                      "gap": 4,
+                      "padding": 8,
                       "alignItems": "center",
                       "children": [
                         {
                           "type": "frame",
                           "id": "BZLLn",
                           "name": "qr-samddn",
-                          "width": 80,
-                          "height": 80,
+                          "width": 60,
+                          "height": 60,
                           "fill": {
                             "type": "image",
                             "enabled": true,
@@ -4921,16 +6359,16 @@
                         "fill": "#0D224412"
                       },
                       "layout": "vertical",
-                      "gap": 8,
-                      "padding": 12,
+                      "gap": 4,
+                      "padding": 8,
                       "alignItems": "center",
                       "children": [
                         {
                           "type": "frame",
                           "id": "bzyXY",
                           "name": "qr-chestniymigrant",
-                          "width": 80,
-                          "height": 80,
+                          "width": 60,
+                          "height": 60,
                           "fill": {
                             "type": "image",
                             "enabled": true,
@@ -5025,6 +6463,80 @@
               "fontWeight": "normal"
             }
           ]
+        },
+        {
+          "type": "rectangle",
+          "id": "TDb3j",
+          "layoutPosition": "absolute",
+          "x": 16,
+          "y": 16,
+          "name": "outerFrame",
+          "width": 808,
+          "height": 1156,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#1A356280"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "BCZ1F",
+          "layoutPosition": "absolute",
+          "x": 20,
+          "y": 20,
+          "name": "innerFrame",
+          "width": 800,
+          "height": 1148,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1A356250"
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "RgXcD",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 17,
+          "name": "corner1",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "mpcSi",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 17,
+          "name": "corner2",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "5dGzw",
+          "layoutPosition": "absolute",
+          "x": 17,
+          "y": 1165,
+          "name": "corner3",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
+        },
+        {
+          "type": "ellipse",
+          "id": "RPtQX",
+          "layoutPosition": "absolute",
+          "x": 817,
+          "y": 1165,
+          "name": "corner4",
+          "fill": "#1A356280",
+          "width": 6,
+          "height": 6
         }
       ]
     }
